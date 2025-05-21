@@ -1,0 +1,147 @@
+.homeBanner {
+  background-color: #ffff;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.homeLeft {
+  width: 70%;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.homeBannerContentContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
+}
+.homeRight {
+  width: 30%;
+  background-color: #08306b;
+  /* border: 2px solid red; */
+}
+
+.rightNav {
+  margin-top: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+.homeBannerContentTitleGreen {
+  color: #026331;
+  margin-inline: 10px;
+}
+
+.homeButtonWhite {
+  background-color: #08306b;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f7fbff;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 42px;
+  color: #08306b;
+}
+.homeButtonGreen {
+  background-color: #026331;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  border-radius: 42px;
+  color: #fff;
+}
+.homeBannerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 70%;
+}
+.homeBannerContentTitle {
+  font-family: "Ubuntu";
+  font-size: 40px;
+  font-weight: 700;
+  color: #08306b;
+  line-height: 50px;
+  letter-spacing: 0%;
+}
+
+.homeBannerContentDescription {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 35px;
+  letter-spacing: -0.09%;
+  color: #08306b;
+  margin-top: 20px;
+}
+
+.homeBannerContentButton {
+  background-color: #fff;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  padding: 15px 25px 15px 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #026331;
+  margin-top: 20px;
+  border: 1px solid #026331;
+  border-radius: 50px;
+  width: 60%;
+}
+.homeBannerContentButtonGreen {
+  background-color: #026331;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  align-items: left;
+  padding: 15px 25px 15px 25px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+  margin-top: 20px;
+  border-radius: 50px;
+  width: 60%;
+}
+
+.homeImageWrapper {
+  position: relative;
+  height: 100%;
+  display: flex;
+  margin-top: 20px;
+}
+
+.imageCard {
+  position: relative;
+  background-color: #e6f0fb;
+  border-radius: 40px 0 0 0;
+  width: 90%;
+  height: 80%;
+  overflow: hidden;
+  border: 4px solid #ffffff;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.ladyImage {
+  max-height: 100%;
+  object-fit: cover;
+  object-position: bottom;
+}

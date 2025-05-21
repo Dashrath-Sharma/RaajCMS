@@ -1,0 +1,63 @@
+.aboutContainer {
+  width: 100%;
+  padding: 50px;
+  background-color: #ffffff;
+  display: flex;
+  gap: 40px;
+}
+
+.aboutContent {
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+
+.aboutContentTitle {
+  font-family: "Ubuntu";
+  font-size: 40px;
+  font-weight: 700;
+  color: #08306b;
+  line-height: 50px;
+  letter-spacing: 0%;
+}
+
+.aboutContentDescription {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 20px;
+  color: #08306b;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.aboutContentButton {
+  background-color: #ffff;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: left;
+  padding: 9px 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #026331;
+  border: 1px solid #026331;
+  width: 60%;
+  margin-top: 20px;
+}
+.aboutContentButtonGreen {
+  background-color: #026331;
+  border: none;
+  border-radius: 50px;
+  display: flex;
+  align-items: left;
+  padding: 9px 30px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+  width: 60%;
+  margin-top: 20px;
+}

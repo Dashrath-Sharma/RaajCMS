@@ -1,0 +1,42 @@
+.LeftRightCardWrapper {
+  width: 100vw;
+  background-color: #08306b;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+}
+
+.LeftRightCardContainer {
+  width: 30%;
+  background-color: #08306b;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.LeftRightImageContainer {
+  height: 150px;
+  width: 150px;
+}
+
+.LeftRightImageContainer img {
+  height: 100%;
+  width: 100%;
+  object-fit: contain; /* or use 'cover' depending on the visual effect you want */
+}
+.LeftRightHead {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #fff;
+}
+.LeftRightTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #f7fbff;
+}

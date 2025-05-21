@@ -1,0 +1,28 @@
+.careerHomeNav {
+  display: flex;
+  align-items: center;
+  background: #f7fbff;
+  padding: 20px 40px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.03);
+  border-radius: 20px;
+  gap: 30px;
+}
+.careerLogo {
+  height: 48px;
+  width: auto;
+}
+.careerNavItem {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  color: #08306b;
+  margin: 0 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+.careerNavItem:hover {
+  color: #026331;
+}

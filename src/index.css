@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap");
+/* App.css or global.css */
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Palanquin Dark", sans-serif;
+}
+/* global CSS file like index.css or App.css */

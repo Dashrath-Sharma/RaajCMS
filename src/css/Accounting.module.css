@@ -1,0 +1,121 @@
+.AccountingContainer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #030266;
+  padding: 50px;
+}
+.Accounting {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.AccountingButton {
+  background-color: #e9f2fc;
+  color: #030266;
+  padding: 10px 50px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-family: "Palanquin", sans-serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 30px;
+  letter-spacing: 0%;
+}
+.AccountingTitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 70px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.AccountingParagraph {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  letter-spacing: 0%;
+  color: #ffffff;
+  text-align: center;
+}
+
+.AccountingCardContainer {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-top: 32px;
+}
+
+.AccountingCard {
+  background-color: #fff;
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  width: 30%;
+}
+
+.ImageWrapper img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.CardHeader {
+  display: flex;
+}
+.CardTitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 40px;
+  letter-spacing: 0%;
+  color: #030266;
+}
+
+.arrowDiv {
+  background-color: #08306b;
+  border-radius: 50%;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+.arrowDiv img {
+  width: 10px;
+  height: 10px;
+}
+
+.LearnMoreBtn {
+  margin-top: 12px;
+  padding: 12px 36px;
+  background-color: #08306b;
+  border: none;
+  color: #fff;
+  border-radius: 26px;
+  cursor: pointer;
+}
+
+.CardDescription {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  text-align: center;
+  letter-spacing: 0%;
+  color: #030266;
+}

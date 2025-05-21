@@ -1,0 +1,19 @@
+.homeNav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #ffffff;
+}
+
+.logo {
+  width: 100px;
+  height: 100px;
+}
+
+.navItem {
+  font-family: Palanquin Dark;
+  font-weight: 400;
+  font-size: 14px;
+  color: #08306b;
+}

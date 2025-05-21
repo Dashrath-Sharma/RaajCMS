@@ -1,0 +1,96 @@
+.cardContainer {
+  width: 100%;
+  background-color: #08306b;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px; /* spacing between cards */
+  flex-wrap: wrap;
+}
+
+/* Individual Card */
+.card {
+  width: 300px;
+  height: 250px;
+  background: #08519c;
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+/* Star in top-right corner */
+.star {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 40px;
+  height: auto;
+}
+
+/* Experience Image */
+.experience {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* Title below image */
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #ffffff;
+  text-align: center;
+}
+
+/* text Card */
+.textCard {
+  background-color: #026331;
+
+  border-radius: 20px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.imageTextCard {
+  width: 30%;
+  height: 200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #026331;
+  /* gap: 10px; */
+  margin: 10px;
+  border-radius: 20px;
+}
+
+.textCardContainer {
+  display: flex;
+  /* justify-content: space-between; */
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #fff;
+  width: 100vw;
+}
+.imageDiv {
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+}
