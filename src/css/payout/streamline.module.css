@@ -1,0 +1,95 @@
+.NewBussinessContainer {
+  width: 100vw;
+  background-color: #f7fbff;
+  padding: 50px;
+  position: relative; /* for absolute positioning of the image */
+  overflow: hidden;
+}
+
+.NewBussinessHead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 30px auto;
+  position: relative;
+  z-index: 2;
+  width: 50%;
+  text-align: center;
+}
+
+.NewBussinessHeadTitle {
+  font-family: var(--font-ubuntu);
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  color: var(--main-color);
+}
+
+.NewBussinessContent {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.NewBussinessImageContainer {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 500px;
+  height: 1000px;
+  z-index: 1;
+}
+
+.NewBussinessImageContainer::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 360px;
+  height: 360px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.NewBussinessImageContainer img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  position: relative;
+  z-index: 2;
+}
+
+.NewBussinessContentRight {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  margin-left: auto;
+  z-index: 2;
+}
+
+.NewBussinessContentCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--main-color);
+  padding: 20px 40px;
+  border-radius: 10px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* ✅ card shadow */
+}
+
+.NewBussinessContentCard p {
+  font-family: var(--font-ubuntu);
+  font-size: 20px;
+  font-weight: 400;
+  color: #f7fbff;
+}
+
+.NewBussinessContentCard img {
+  width: 30px;
+  height: 30px;
+  background-color: #f7fbff;
+  margin-left: 20px;
+}

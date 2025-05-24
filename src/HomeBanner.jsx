@@ -1,8 +1,6 @@
 import React from 'react'
 import style from './css/home.module.css'
 import HomeNav from './component/HomeNav'
-import letMeet from './assets/LetMeet.png'
-import clientPortal from './assets/clientProtal.png'
 import image1 from './assets/homeImage.png'
 
 
@@ -10,7 +8,6 @@ const HomeBanner = () => {
     return (
         <div className={style.homeBanner}>
             <div className={style.homeLeft}>
-                <HomeNav />
                 <div className={style.homeBannerContentContainer}>
                     <div className={style.homeBannerContent}>
 
@@ -41,20 +38,6 @@ const HomeBanner = () => {
 
             </div>
             <div className={style.homeRight}>
-                <div className={style.rightNav}>
-                    <button className={style.homeButtonWhite}>
-                        <img src={letMeet} alt="arrow" />
-                        <p>
-                            LET’S MEET!
-                        </p>
-                    </button>
-                    <button className={style.homeButtonGreen}>
-                        <img src={clientPortal} alt="arrow" />
-                        <p>
-                            CLIENT PORTAL
-                        </p>
-                    </button>
-                </div>
                 <div className={style.homeImageWrapper}>
                     <div className={style.imageCard}>
                         <img src={image1} alt="image" className={style.ladyImage} />

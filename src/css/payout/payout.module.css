@@ -1,0 +1,29 @@
+.payoutCardContainer {
+  width: 100vw;
+  background-color: #e9f2fc;
+  padding: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CardContainer {
+  display: flex;
+  width: 30%;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 20px;
+  background-color: var(--main-color);
+  padding: 40px;
+  border-radius: 30px;
+}
+.CradHead {
+  font-family: var(--font-ubuntu);
+  color: #fff;
+  text-align: center;
+}
+.CradPara {
+  font-family: var(--font-inter);
+  color: #fff;
+  text-align: center;
+}

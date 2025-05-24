@@ -1,35 +1,24 @@
 import React from 'react';
-import style from '../css/Carreer/careerHero.module.css';
-import logo from '../assets/logo.png';
-import arrow from '../assets/right.png';
-import heroImage from '../assets/textCard/career.png'; // Placeholder for career hero image
+import HomeNav from '../HomeNav';
+import arrow from '../../assets/right.png';
+import heroImage from '../../assets/service/ServiceHome.png'; // Placeholder for career hero image
 
-const CareerHome = () => {
+const ServiceHome = () => {
     return (
         <div style={{ display: 'flex', width: '100vw', height: '100vh', background: '#f7fbff' }}>
             <div style={{ width: '70%', display: 'flex', flexDirection: 'column', justifyContent: 'space-between', background: '#fff' }}>
-                <div className={style.careerHomeNav}>
-                    <img className={style.careerLogo} src={logo} alt="logo" />
-                    <div className={style.careerNavItem}>
-                        JOB OPENINGS
-                        <img src={arrow} alt="arrow" />
-                    </div>
-                    <div className={style.careerNavItem}>INTERNSHIPS</div>
-                    <div className={style.careerNavItem}>LIFE AT BEAN COUNTER</div>
-                    <div className={style.careerNavItem}>APPLY NOW</div>
-                </div>
+                <HomeNav />
                 <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', paddingBottom: 50 }}>
                     <div style={{ width: '70%' }}>
-                        <h2 style={{ fontFamily: 'Ubuntu', fontSize: 40, fontWeight: 700, color: '#08306b', lineHeight: '50px' }}>
-                            Join Our <span style={{ color: '#026331', marginInline: 10 }}>Career</span> Team<br />
-                            and Grow With Us
-                        </h2>
-                        <p style={{ fontFamily: 'Inter', fontWeight: 500, fontSize: 22, lineHeight: '35px', color: '#08306b', marginTop: 20 }}>
-                            Discover opportunities to build your future with Bean Counter. We value passion, growth, and teamwork. Explore our open positions and become part of our story.
+                        <p style={{ fontFamily: 'Ubuntu', fontSize: 12, fontWeight: 700, color: '#08306b', lineHeight: '30px', width: "fit-content", background: "#E9F2FC", padding: "10px 40px", }}>
+                            Tax Preparation
                         </p>
-                        <button style={{ background: '#fff', border: '1px solid #026331', borderRadius: 50, color: '#026331', padding: '15px 25px', fontSize: 16, marginTop: 20, width: '60%' }}>
-                            View Open Positions
-                        </button>
+                        <h2 style={{ fontFamily: 'Ubuntu', fontSize: 40, fontWeight: 700, color: '#08306b', lineHeight: '50px' }}>
+                            We handle your finances
+                            confidentially, professionally,
+                            and efficiently.
+
+                        </h2>
                         <button style={{ background: '#026331', border: 'none', borderRadius: 50, color: '#fff', padding: '15px 25px', fontSize: 16, marginTop: 20, width: '60%' }}>
                             Apply for Internship
                         </button>
@@ -57,4 +46,4 @@ const CareerHome = () => {
     );
 };
 
-export default CareerHome; 
+export default ServiceHome;

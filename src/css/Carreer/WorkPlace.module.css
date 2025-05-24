@@ -1,0 +1,65 @@
+.workplaceContainer {
+  width: 100vw;
+  display: flex;
+  background-color: #fff;
+}
+
+.workplaceLeft {
+  width: 30%;
+  background-color: #08306b;
+  padding: 50px;
+  position: relative;
+}
+.workplaceImage {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  object-fit: cover;
+}
+.workplaceImage img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.workplaceContent {
+  width: 60%;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 50px;
+}
+
+.workplaceTitle {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 45px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #08306b;
+  text-align: left;
+  margin-bottom: 20px;
+}
+
+.workplaceText {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #08306b;
+}
+.workplaceList {
+  display: flex;
+  gap: 20px;
+}
+.workplaceListLeft {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.workplaceListText {
+  font-family: "Inter", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #08306b;
+}

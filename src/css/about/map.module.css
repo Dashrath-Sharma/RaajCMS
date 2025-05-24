@@ -1,0 +1,45 @@
+.MapContainer {
+  padding: 50px;
+  background-color: #e9f2fc;
+}
+
+.MapContainerP {
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 31px;
+  letter-spacing: 0%;
+  text-align: justify;
+  font-size: 16px;
+  margin-bottom: 10px;
+  color: #026331;
+}
+
+.MapContainerH2 {
+  font-family: var(--font-ubuntu);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 61px;
+  letter-spacing: 0%;
+  text-align: justify;
+  font-size: 40px;
+  color: var(--main-color);
+}
+.MapContainerH2Blue {
+  font-family: var(--font-ubuntu);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 61px;
+  letter-spacing: 0%;
+  text-align: justify;
+  font-size: 40px;
+  color: #026331;
+}
+
+.Map {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding: 50px;
+  background-color: #f5f5f5;
+}

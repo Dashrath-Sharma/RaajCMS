@@ -1,0 +1,99 @@
+.positionContainer {
+  padding: 50px;
+  width: 100vw;
+  background-color: #e9f2fc;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.positionTitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 70px;
+  color: #08306b;
+  margin-bottom: 50px;
+}
+
+.positionCard:hover {
+  transform: translateY(-5px);
+}
+
+.positionCardImage {
+  width: 80px;
+  height: 80px;
+  padding: 10px;
+  background-color: #08306b;
+  border-radius: 50%;
+  object-fit: contain;
+}
+
+.positionCardTitle {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  color: #333;
+  margin: 0;
+}
+
+/* Grid layout for cards */
+/* Grid layout for cards */
+.positionGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns */
+  gap: 30px;
+  width: 100%;
+}
+
+/* Remove this line from .positionCard:
+     width: 30%; */
+.positionCard {
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  transition: transform 0.3s ease;
+}
+.positionButtonWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  margin-top: 40px;
+  width: 100%;
+  flex-wrap: wrap; /* Optional: Allows wrapping on smaller screens */
+}
+.positionButton {
+  background-color: #026331;
+  color: #ffffff;
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  border-radius: 12px;
+  padding: 20px 15px;
+  cursor: pointer;
+  width: 30%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+}
+
+@media (max-width: 768px) {
+  .positionTitle {
+    font-size: 32px;
+    line-height: 48px;
+  }
+
+  .positionContainer {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    padding: 20px;
+  }
+}

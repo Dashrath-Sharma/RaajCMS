@@ -8,10 +8,12 @@ import { TextCardContainer } from '../component/ImageTextCard'
 import LeftRightCardContainer from '../component/LeftRight'
 import WhyBussiness from '../component/WhyBussiness'
 import Accounting from '../component/Accounting'
+import HomeNav from '../component/HomeNav'
 
 const Home = () => {
     return (
         <div>
+            <HomeNav />
             <HomeBanner />
             <HomeStarCard />
             <HomeAbout />

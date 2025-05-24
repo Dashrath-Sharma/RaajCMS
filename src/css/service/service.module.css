@@ -1,0 +1,48 @@
+.ServiceCheckContainer {
+  background-color: #e9f2fc;
+  width: 100vw;
+  padding: 50px;
+}
+
+.ServiceCheckContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.ServiceCheckContent {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+  gap: 20px;
+}
+.ServiceCheckTitle {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 40px;
+  font-weight: 600;
+  color: #08306b;
+}
+.ServiceCheckRight {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+.ServiceCheckRightTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 35px;
+  color: #08306b;
+  text-align: left;
+}
+.ServiceCheckRightButton {
+  background-color: #026331;
+  color: #fff;
+  border: none;
+  padding: 10px 40px;
+  border-radius: 50px;
+  cursor: pointer;
+  margin-top: 20px;
+}
