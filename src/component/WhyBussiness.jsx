@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '../css/WhyBussiness.module.css'
+import style from '../css/whyBussiness.module.css'
 import profile1 from '../assets/whyBussiness/profile1.png';
 import profile2 from '../assets/whyBussiness/profile2.png';
 import profile3 from '../assets/whyBussiness/profile3.png';
