@@ -1,6 +1,6 @@
 import React from 'react'
 import style from "../../css/Carreer/OurStrength.module.css";
-import image1 from "../../assets/carrer/ourSt1.png";
+import image1 from "../../assets/carrer/OurSt1.png";
 import image2 from "../../assets/carrer/ourSt2.png";
 import image3 from "../../assets/carrer/ourSt3.png";
 
