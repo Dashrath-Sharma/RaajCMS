@@ -1,7 +1,7 @@
 import React from 'react'
 import style from "../../css/service/serving.module.css"
 import image1 from "../../assets/service/kevin.png"
-import star from "../../assets/service/star.png"
+import star from "../../assets/service/Star.png"
 
 const Serving = () => {
     return (
