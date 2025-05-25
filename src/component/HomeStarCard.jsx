@@ -12,7 +12,9 @@ const Card = ({ midImage, title }) => {
         <div className={style.card}>
             <img className={style.star} src={star} alt="star" />
             <img className={style.experience} src={midImage} alt="mid" />
-            <p className={style.title}>{title}</p>
+            <p className={style.title}>{title}
+
+            </p>
         </div>
     )
 }
