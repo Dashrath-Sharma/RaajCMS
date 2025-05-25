@@ -35,8 +35,8 @@
   padding: 20px;
 }
 .WhyBussinessCardImageContainer {
-  height: 80px;
-  width: 80px;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
   overflow: hidden;
   row-gap: 2000px;
@@ -51,4 +51,46 @@
 .WhyBussinessCardImage {
   display: flex;
   gap: 20px;
+}
+
+.WhyBussinessCardImageText {
+  display: flex;
+  flex-direction: column;
+}
+.WhyBussinessCardImageText p {
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: #282828;
+}
+.WhyBussinessCardImageText span {
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: #282828;
+}
+.WhyBussinessCardImage {
+  margin-block: 10px;
+}
+.WhyBussinessCardImageDis {
+  color: #08306b;
+  font-family: "Inter";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  letter-spacing: 0%;
+  text-align: justify;
+}
+
+.WhyBussinessCardFooter {
+  display: flex;
+  align-items: start;
+  margin-top: 10px;
+  gap: 10px;
 }

@@ -41,6 +41,7 @@
 .homeBannerContentTitleGreen {
   color: #026331;
   margin-inline: 10px;
+  transition: opacity 0.3s ease-in-out;
 }
 
 .homeButtonWhite {
@@ -84,8 +85,8 @@
 .homeBannerContentDescription {
   font-family: "Inter";
   font-weight: 500;
-  font-size: 22px;
-  line-height: 35px;
+  font-size: 16px;
+  line-height: 24px;
   letter-spacing: -0.09%;
   color: #08306b;
   margin-top: 20px;
@@ -99,7 +100,7 @@
   align-items: center;
   padding: 15px 25px 15px 25px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #026331;
@@ -116,7 +117,7 @@
   align-items: left;
   padding: 15px 25px 15px 25px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 14px;
   line-height: 100%;
   letter-spacing: 0%;
   color: #fff;

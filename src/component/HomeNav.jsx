@@ -4,6 +4,7 @@ import logo from '../assets/logo.png';
 import arrow from '../assets/right.png';
 import LetMeet from "../assets/LetMeet.png";
 import client from "../assets/clientProtal.png";
+import { Link } from 'react-router-dom';
 
 const HomeNav = () => {
     const [isScrolled, setIsScrolled] = useState(false);
@@ -18,13 +19,13 @@ const HomeNav = () => {
 
     return (
         <div className={`${style.homeNav} ${isScrolled ? style.scrolled : ''}`}>
-            <img className={style.logo} src={logo} alt="logo" />
-            <div className={style.navItem}>SERVICES <img src={arrow} alt="arrow" /></div>
+            <Link to="/"> <img className={style.logo} src={logo} alt="logo" /></Link>
+            <Link to={"/service"} className={style.navItem}>SERVICES <img src={arrow} alt="arrow" /></Link>
+            <Link to={"/carrer"} className={style.navItem}>CARRERS</Link>
+            <Link to={"/payout"} className={style.navItem}>PAYOUT </Link>
+            <Link to={"/resource"} className={style.navItem}>RESOURCES <img src={arrow} alt="arrow" /></Link>
             <div className={style.navItem}>CONTACT US</div>
-            <div className={style.navItem}>CARRERS</div>
-            <div className={style.navItem}>RESOURCES <img src={arrow} alt="arrow" /></div>
-            <div className={style.navItem}>CARRERS <img src={arrow} alt="arrow" /></div>
-            <div className={style.navItem}>ABOUT US</div>
+            <Link to={"/about"} className={style.navItem}>ABOUT US</Link>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <button style={{
                     background: '#f7fbff',
@@ -54,7 +55,7 @@ const HomeNav = () => {
                     <p>CLIENT PORTAL</p>
                 </button>
             </div>
-        </div>
+        </div >
     );
 };
 

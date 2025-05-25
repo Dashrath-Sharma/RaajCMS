@@ -9,7 +9,7 @@ import arrowIcon from '../assets/whyBussiness/yelp.png'; // Make sure you use th
 const BussinessCardData = [
     {
         img: profile1,
-        name: "John Doe",
+        name: "Sakchai L.",
         title: "CEO",
         description: "I am very happy with the service. Kevin is personable and professional. He got everything done so quickly and thoroughly within days. I highly recommend this firm.",
         seeYou: "See you",
@@ -17,16 +17,16 @@ const BussinessCardData = [
     },
     {
         img: profile2,
-        name: "John Doe",
-        title: "CEO",
+        name: "Sarah S.",
+        title: "LLC",
         description: "Working with Kevin has been great! He helped me file my back taxes and get me back on track! Helped me with my EIN number for my new LLC, which was a headache for me.",
         seeYou: "See you",
         arrow: arrowIcon
     },
     {
         img: profile3,
-        name: "John Doe",
-        title: "CEO",
+        name: "Jonathan C.",
+        title: "Founder",
         description: "Kevin Bautier at Bean Counter is a knowledgeable professional. He has suggested solutions to miscellaneous concerns and has been excellent to work with over the years.",
         seeYou: "See you",
         arrow: arrowIcon
@@ -46,10 +46,10 @@ export const WhyBussinessCard = ({ img, name, title, description, seeYou, arrow 
                     <span>{title}</span>
                 </div>
             </div>
-            <div>
+            <div className={style.WhyBussinessCardImage}>
                 <img src={starLine} alt="star line" />
             </div>
-            <div>
+            <div className={style.WhyBussinessCardImageDis}>
                 <p>{description}</p>
             </div>
             <div className={style.WhyBussinessCardFooter}>
