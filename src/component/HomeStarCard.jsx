@@ -1,5 +1,5 @@
 import React from 'react'
-import star from '../assets/Star.png'
+import star from '../assets/star.png'
 import experience from '../assets/experience.png'
 import handshake from '../assets/handshake.png';
 import link from '../assets/link.png';
