@@ -1,5 +1,5 @@
 import React from 'react'
-import style from '../css/accounting.module.css'
+import style from '../css/Accounting.module.css'
 import arrow from '../assets/Accounting/arrow_forward.png'
 import image1 from '../assets/Accounting/Acc1.png'
 import image2 from '../assets/Accounting/acc2.png'
