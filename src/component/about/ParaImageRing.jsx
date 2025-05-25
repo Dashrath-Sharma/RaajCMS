@@ -1,5 +1,5 @@
 import React from 'react';
-import style from '../../css/about/ParaImageRing.module.css';
+import style from '../../css/about/paraImageRing.module.css';
 import kevin from '../../assets/about/kevin.png'; // Update path if needed
 
 const ParaImageRing = () => {
