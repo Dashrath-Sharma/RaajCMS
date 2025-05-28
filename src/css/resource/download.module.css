@@ -1,0 +1,55 @@
+.DownloadConatiner {
+  text-align: center;
+  padding: 2rem;
+}
+
+.carouselWrapper {
+  position: relative;
+  max-width: 900px;
+  margin: 2rem auto;
+}
+
+.arrowContainer {
+  position: absolute;
+  top: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1rem;
+  z-index: 5;
+}
+
+.arrowBtn {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: red;
+}
+.arrowBtn1 {
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+  padding: 10px;
+  background-color: blue;
+}
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 1rem;
+  padding: 1rem 0;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+.card {
+  flex: 0 0 45%; /* Show 2 full and 1 partial */
+  min-width: 300px;
+  max-width: 350px;
+  border-radius: 10px;
+  object-fit: cover;
+}

@@ -24,7 +24,7 @@ const HomeNav = () => {
             <Link to={"/carrer"} className={style.navItem}>CARRERS</Link>
             <Link to={"/payout"} className={style.navItem}>PAYOUT </Link>
             <Link to={"/resource"} className={style.navItem}>RESOURCES <img src={arrow} alt="arrow" /></Link>
-            <div className={style.navItem}>CONTACT US</div>
+            <Link to={"/contact"} className={style.navItem}>CONTACT US</Link>
             <Link to={"/about"} className={style.navItem}>ABOUT US</Link>
             <div style={{ display: 'flex', justifyContent: 'space-between' }}>
                 <button style={{
@@ -35,10 +35,11 @@ const HomeNav = () => {
                     padding: 10,
                     display: 'flex',
                     alignItems: 'center',
+                    justifyContent: 'center',
                     gap: 5
                 }}>
                     <img src={LetMeet} alt="arrow" />
-                    <p>JOIN US</p>
+                    <p>LET’S MEET!</p>
                 </button>
                 <button style={{
                     background: '#026331',

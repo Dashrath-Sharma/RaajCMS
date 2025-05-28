@@ -1,0 +1,6 @@
+.weAreContainer {
+  background-color: var(--main-color);
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+}

@@ -8,6 +8,9 @@ import Service from "./pages/Service";
 import Payout from "./pages/Payout";
 import About from "./pages/About";
 import Resource from "./pages/Resource";
+import ContactUs from "./pages/ContactUs";
+import AmountPayable from "./pages/AmountPayable";
+import Administrative from "./pages/Administrative";
 const App = () => {
   return (
     <Routes>
@@ -18,6 +21,12 @@ const App = () => {
         <Route path="/payout" element={<Payout />} />
         <Route path="/about" element={<About />} />
         <Route path="/resource" element={<Resource />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/amount" element={<AmountPayable />} />
+        <Route path="/administrative" element={<Administrative />} />
+
+        <Route path="*" element={<Home />} />
+
       </Route>
     </Routes>
   );

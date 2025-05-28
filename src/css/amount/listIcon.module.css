@@ -1,0 +1,176 @@
+.container {
+  padding: 50px;
+  background-color: #e9f2fc;
+  border-radius: 16px;
+}
+
+.content {
+  flex: 1;
+  margin-right: 20px;
+  background-color: var(--main-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+  flex-wrap: wrap;
+  padding: 20px;
+  gap: 30px;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #08306b;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: #08306b;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.list {
+  max-width: 500px;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+.border {
+  border-bottom: 1px solid white;
+}
+
+.points {
+  list-style: none;
+  padding: 0;
+}
+
+.points li {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  color: #08306b;
+  font-family: "Inter", sans-serif;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.tick {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-top: 2px;
+  color: white;
+}
+
+.imageWrapper {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  width: 100%;
+  max-width: 500px;
+  height: 70%;
+  object-fit: cover;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+}
+.sideList {
+  background-color: #002b5b;
+  color: white;
+  padding: 50px 30px;
+  margin-top: 40px;
+  border-radius: 16px;
+}
+
+.sideTitle {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.sideListContent {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 24px;
+}
+
+.sideListContent li {
+  display: flex;
+  align-items: flex-start;
+  font-size: 15px;
+  color: white;
+  line-height: 1.5;
+}
+
+.sideListContent img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f4f7fc;
+  padding: 40px 30px;
+  border-radius: 16px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footerText h4 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #002b5b;
+}
+
+.footerLogo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoBox {
+  background-color: #002b5b;
+  color: white;
+  padding: 14px 28px;
+  border-radius: 12px;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+/* Rhe
+esponsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .content {
+    margin-right: 0;
+  }
+
+  .points li {
+    justify-content: center;
+    text-align: left;
+  }
+}
