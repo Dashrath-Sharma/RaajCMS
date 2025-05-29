@@ -38,7 +38,8 @@ const ServiceHome = () => {
                         color: '#08306b',
                         lineHeight: '50px'
                     }}>
-                        We handle your finances confidentially, professionally, and efficiently.
+                        We handle your finances<br /> confidentially,
+                        professionally,<br /> and efficiently.
                     </h2>
 
                     <button style={{
@@ -60,58 +61,42 @@ const ServiceHome = () => {
             {/* Right Section */}
             <div style={{
                 width: '30%',
+                height: '100%',
                 background: '#08306b',
                 display: 'flex',
-                justifyContent: 'flex-start',
-                alignItems: 'center',
-                position: 'relative'
+                justifyContent: 'flex-end',
+                alignItems: 'flex-end',
+                position: 'relative',
+                borderRadius: '10px',
+
             }}>
+                {/* Circle Behind Head */}
                 <div style={{
-                    position: 'relative',
-                    left: '10%',
-                    width: '300px',
-                    height: '300px',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center'
-                }}>
-                    {/* Top Left Border */}
-                    <div style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '60px',
-                        height: '60px',
-                        borderTop: '4px solid #fff',
-                        borderLeft: '4px solid #fff',
-                        borderTopLeftRadius: '12px'
-                    }} />
+                    position: 'absolute',
+                    top: '30%',
+                    left: '50%',
+                    transform: 'translateX(-50%)',
+                    width: '350px',
+                    height: '350px',
+                    backgroundColor: '#fff',
+                    borderRadius: '50%',
+                    zIndex: 10,
+                }} />
 
-                    {/* Bottom Right Border */}
-                    <div style={{
-                        position: 'absolute',
-                        bottom: 0,
-                        right: 0,
-                        width: '60px',
-                        height: '60px',
-                        borderBottom: '4px solid blue',
-                        borderRight: '4px solid white',
-                        borderBottomRightRadius: '12px'
-                    }} />
-
-                    {/* Hero Image */}
-                    <img
-                        src={heroImage}
-                        alt="service"
-                        style={{
-                            width: '300px',
-                            height: '300px',
-                            objectFit: 'contain',
-                            zIndex: 1
-                        }}
-                    />
-                </div>
+                {/* Image */}
+                <img
+                    src={heroImage}
+                    alt="service"
+                    style={{
+                        height: '70%',
+                        objectFit: 'contain',
+                        zIndex: 10,
+                        position: 'relative',
+                        left: "20%",
+                    }}
+                />
             </div>
+
         </div>
     );
 };

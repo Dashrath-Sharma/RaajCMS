@@ -32,7 +32,8 @@
 .WhyBussinessCard {
   background-color: #e9f2fc;
   border-radius: 35px;
-  padding: 20px;
+  padding: 30px;
+  border: 1px solid rebeccapurple;
 }
 .WhyBussinessCardImageContainer {
   height: 60px;
@@ -91,6 +92,16 @@
 .WhyBussinessCardFooter {
   display: flex;
   align-items: start;
-  margin-top: 10px;
+  margin-top: 30px;
   gap: 10px;
+}
+.name {
+  font-family: "Inter";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: justify;
+  color: #08306b;
+  margin-bottom: 10px;
 }

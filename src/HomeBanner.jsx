@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react'
 import style from './css/home.module.css'
-import HomeNav from './component/HomeNav'
 import image1 from './assets/homeImage.png'
 
 

@@ -23,7 +23,7 @@ const Serving = () => {
                             <img src={star} alt="star" />
                             <img src={star} alt="star" />
                         </div>
-                        <p>Kevin</p>
+                        <p className={style.name}>-Oscar Flink</p>
                     </div>
 
                 </div>

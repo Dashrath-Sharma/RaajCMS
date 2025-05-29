@@ -5,7 +5,7 @@ const HomeAbout = () => {
     return (
         <div className={style.aboutContainer}>
             <div className={style.aboutImage}>
-                <img src={about} alt="" />
+                <img src={about} alt="" className={style.image} />
             </div>
             <div className={style.aboutContent}>
                 <h2 className={style.aboutContentTitle}>

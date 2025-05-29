@@ -42,8 +42,8 @@ export const WhyBussinessCard = ({ img, name, title, description, seeYou, arrow 
                     <img src={img} alt="Profile" />
                 </div>
                 <div className={style.WhyBussinessCardImageText}>
-                    <p>{name}</p>
-                    <span>{title}</span>
+                    <p className={style.name}>{name}</p>
+                    <span className={style.position}>{title}</span>
                 </div>
             </div>
             <div className={style.WhyBussinessCardImage}>

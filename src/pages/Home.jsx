@@ -13,7 +13,6 @@ import HomeNav from '../component/HomeNav'
 const Home = () => {
     return (
         <div>
-            <HomeNav />
             <HomeBanner />
             <HomeStarCard />
             <HomeAbout />

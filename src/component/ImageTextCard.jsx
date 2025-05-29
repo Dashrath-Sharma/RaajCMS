@@ -9,12 +9,12 @@ import folder from "../assets/textCard/folder.png"
 
 
 const textCardData = [
-    { title: "Account", img: account },
-    { title: "Career", img: career },
-    { title: "File", img: file },
-    { title: "Folder", img: folder },
-    { title: "File", img: file },
-    { title: "Folder", img: folder },
+    { title: "Tax Preparation", img: account },
+    { title: "Accounting", img: career },
+    { title: "Payroll", img: file },
+    { title: "Administrative Tasks", img: folder },
+    { title: "Business Formation", img: file },
+    { title: "Accounts Payable", img: folder },
 ];
 
 
@@ -22,7 +22,7 @@ export const ImageTextCard = ({ image, title }) => {
     return (
         <div className={style.imageTextCard}>
             <div className={style.imageDiv}>
-                <img src={image} alt="" />
+                <img src={image} alt="" className={style.image} />
             </div>
             <h3 className={style.imageTextCardTitle}>{title}</h3>
 
