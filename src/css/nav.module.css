@@ -1,5 +1,5 @@
 .homeNav {
-  position: absolute; /* ✅ Make it scroll with page */
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
@@ -9,16 +9,10 @@
   align-items: center;
   padding: 20px 50px;
   width: 100%;
-  background-color: transparent; /* ✅ Fully transparent initially */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
-  pointer-events: auto; /* ✅ Prevent blocking clicks when invisible */
 }
 
-.scrolled {
-  position: fixed; /* ✅ Stick it once scrolled */
-  background-color: #ffffff;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  pointer-events: auto; /* ✅ Enable interaction again */
+.hide {
+  transform: translateY(-100%);
 }
 
 .logo {

@@ -7,22 +7,32 @@ import client from "../assets/clientProtal.png";
 import { Link } from 'react-router-dom';
 
 const HomeNav = () => {
-    const [isScrolled, setIsScrolled] = useState(false);
+    const [hideHeader, setHideHeader] = useState(false);
+    const [lastScrollY, setLastScrollY] = useState(0);
 
     useEffect(() => {
         const handleScroll = () => {
-            setIsScrolled(window.scrollY > 20);
+            const currentScrollY = window.scrollY;
+
+            if (currentScrollY > lastScrollY && currentScrollY > 50) {
+                setHideHeader(true); // scroll down → hide
+            } else {
+                setHideHeader(false); // scroll up → show
+            }
+
+            setLastScrollY(currentScrollY);
         };
+
         window.addEventListener('scroll', handleScroll);
         return () => window.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [lastScrollY]);
 
     return (
-        <div className={`${style.homeNav} ${isScrolled ? style.scrolled : ''}`}>
+        <div className={`${style.homeNav} ${hideHeader ? style.hide : ''}`}>
             <Link to="/"> <img className={style.logo} src={logo} alt="logo" /></Link>
             <Link to={"/service"} className={style.navItem}>SERVICES <img src={arrow} alt="arrow" /></Link>
             <Link to={"/carrer"} className={style.navItem}>CARRERS</Link>
-            <Link to={"/payout"} className={style.navItem}>PAYOUT </Link>
+            <Link to={"/payout"} className={style.navItem}>PAYOUT</Link>
             <Link to={"/resource"} className={style.navItem}>RESOURCES <img src={arrow} alt="arrow" /></Link>
             <Link to={"/contact"} className={style.navItem}>CONTACT US</Link>
             <Link to={"/about"} className={style.navItem}>ABOUT US</Link>
