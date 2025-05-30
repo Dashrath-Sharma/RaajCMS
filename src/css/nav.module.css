@@ -32,3 +32,23 @@
   display: flex;
   gap: 1rem;
 }
+.dropdownWrapper {
+  position: relative;
+}
+
+.dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 999;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.arrowIcon {
+  transition: transform 0.3s ease;
+}
+
+.rotate {
+  transform: rotate(180deg);
+}

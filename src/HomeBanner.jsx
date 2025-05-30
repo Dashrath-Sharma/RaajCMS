@@ -12,7 +12,7 @@ const HomeBanner = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrentIndex((prevIndex) => (prevIndex + 1) % words.length);
-        }, 500);
+        }, 1000);
         return () => clearInterval(interval);
     }, []);
 
@@ -23,9 +23,13 @@ const HomeBanner = () => {
                     <div className={style.homeBannerContent}>
                         <h2 className={style.homeBannerContentTitle}>
                             Expert{" "}
-                            <span className={style.homeBannerContentTitleGreen}>
+                            <span
+                                className={`${style.homeBannerContentTitleGreen} ${style.wordSlide}`}
+                                key={currentIndex} // Ensures re-render & animation on word change
+                            >
                                 {words[currentIndex]}
                             </span>
+
                             <br />
                             services for Small Businesses & Individuals
                         </h2>
