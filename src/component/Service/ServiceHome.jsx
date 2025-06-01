@@ -11,18 +11,18 @@ const ServiceHome = () => {
                 flexDirection: 'column',
                 justifyContent: 'center',
                 alignItems: 'center',
-                padding: '0 5%',
-                background: '#fff'
+                padding: '50px 100px',
+                background: '#fff',
             }}>
                 <div style={{ width: '100%' }}>
                     <button style={{
                         fontFamily: 'Ubuntu',
-                        fontSize: 12,
-                        fontWeight: 700,
-                        color: '#08306b',
+                        fontSize: '20px',
+                        fontWeight: 500,
+                        color: '#08306B',
                         lineHeight: '30px',
                         background: "#E9F2FC",
-                        padding: "10px 40px",
+                        padding: "15px 40px",
                         borderRadius: '10px',
                         border: 'none',
                         marginBottom: 20,
@@ -43,17 +43,17 @@ const ServiceHome = () => {
                     </h2>
 
                     <button style={{
+                        fontFamily: 'Palanquin Dark',
                         background: '#026331',
                         border: 'none',
                         borderRadius: 50,
                         color: '#fff',
-                        padding: '15px 25px',
-                        fontSize: 16,
+                        padding: '12px 80px',
+                        fontSize: '22px',
                         marginTop: 30,
-                        width: '60%',
                         cursor: 'pointer'
                     }}>
-                        Apply for Internship
+                        File your Taxes
                     </button>
                 </div>
             </div>
@@ -69,16 +69,17 @@ const ServiceHome = () => {
                 position: 'relative',
                 borderRadius: '10px',
 
+
             }}>
                 {/* Circle Behind Head */}
                 <div style={{
                     position: 'absolute',
-                    top: '30%',
-                    left: '50%',
+                    top: '20%',
+                    right: '-20%',
                     transform: 'translateX(-50%)',
                     width: '350px',
                     height: '350px',
-                    backgroundColor: '#fff',
+                    backgroundColor: '#E9F2FC',
                     borderRadius: '50%',
                     zIndex: 10,
                 }} />
@@ -88,11 +89,11 @@ const ServiceHome = () => {
                     src={heroImage}
                     alt="service"
                     style={{
-                        height: '70%',
+                        height: '80%',
                         objectFit: 'contain',
                         zIndex: 10,
                         position: 'relative',
-                        left: "20%",
+                        left: "10%",
                     }}
                 />
             </div>

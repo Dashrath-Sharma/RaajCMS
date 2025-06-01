@@ -34,7 +34,9 @@ const positionData = [
 export const PositionCard = ({ image, title }) => {
     return (
         <div className={style.positionCard}>
-            <img src={image} alt={title} className={style.positionCardImage} />
+            <div className={style.positionCardImageWrapper}>
+                <img src={image} alt={title} className={style.positionCardImage} />
+            </div>
             <h3 className={style.positionCardTitle}>{title}</h3>
 
         </div>
@@ -58,9 +60,9 @@ const Position = () => {
                 ))}
             </div>
             <div className={style.positionButtonWrapper}>
-                <button className={style.positionButton}>View All Positions</button>
-                <button className={style.positionButton}>Apply Now</button>
-                <button className={style.positionButton}>View All Positions</button>
+                <button className={style.positionButton}>Apply for <span className={style.sub}> Palms Springs, CA </span></button>
+                <button className={style.positionButton}>Apply for <span className={style.sub}>Whittier, CA </span></button>
+                <button className={style.positionButton}>Apply  <span className={style.sub}> Remotely</span></button>
             </div>
         </div>
     )

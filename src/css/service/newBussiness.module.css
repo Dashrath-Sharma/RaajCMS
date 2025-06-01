@@ -1,7 +1,7 @@
 .NewBussinessContainer {
   width: 100vw;
   background-color: #08306b;
-  padding: 50px;
+  padding: 50px 50px 0px 50px;
   position: relative; /* for absolute positioning of the image */
   overflow: hidden;
 }
@@ -10,18 +10,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 30%;
   margin: 0 auto;
   position: relative;
-  z-index: 2;
+  margin-bottom: 50px;
 }
 
 .NewBussinessHeadTitle {
   font-family: var(--font-ubuntu);
   font-size: 50px;
   font-weight: 700;
-  line-height: 50px;
   color: #f7fbff;
+  text-align: center;
+  line-height: 70px;
+  letter-spacing: -0.09%;
 }
 
 .NewBussinessContent {
@@ -35,27 +36,33 @@
 .NewBussinessImageContainer {
   position: absolute;
   left: 0;
-  top: 0;
+  bottom: 0; /* change from top: 0 to bottom: 0 */
   width: 500px;
-  height: 1000px;
+  height: 100%; /* match parent's height */
   z-index: 1;
+  display: flex;
+  align-items: flex-end; /* push image to bottom */
+  justify-content: center;
 }
-
+.kevinImage {
+  height: 70%; /* 70% of the container height */
+  object-fit: contain;
+}
 .NewBussinessImageContainer::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 60px;
   left: 20px;
-  width: 260px;
-  height: 260px;
+  width: 300px;
+  height: 300px;
   background-color: #f7fbff;
   border-radius: 50%;
   z-index: 0;
 }
 
 .NewBussinessImageContainer img {
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  height: 100%;
   object-fit: cover;
   position: relative;
   z-index: 2;
@@ -66,6 +73,7 @@
   flex-direction: column;
   gap: 20px;
   margin-left: auto;
+  padding-bottom: 50px;
   z-index: 2;
 }
 
@@ -75,6 +83,31 @@
   justify-content: center;
   background-color: #f7fbff;
   padding: 20px 40px;
-  border-radius: 10px;
+  border-radius: 30px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* ✅ card shadow */
+}
+.NewBussinessImageContainer::before {
+  top: auto;
+  bottom: 200px;
+  left: 40px;
+}
+
+.paraText {
+  margin: 20px;
+}
+
+.paraText p {
+  font-family: Inter;
+  font-size: 30px;
+  font-weight: 500;
+  color: #08306b;
+  text-align: center;
+  line-height: 40px;
+  letter-spacing: -0.09%;
+}
+.paraText span {
+  font-family: Inter;
+  font-size: 16px;
+  font-weight: 400;
+  color: #08306b;
 }

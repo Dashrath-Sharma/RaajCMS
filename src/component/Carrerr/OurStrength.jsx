@@ -29,7 +29,7 @@ export const OurStrengthCard = ({ image, title, description }) => {
     return (
         <div className={style.OurStrengthCard}>
             <div className={style.OurStrengthCardImage}>
-                <img src={image} alt="" />
+                <img src={image} alt="strength image not found" />
             </div>
             <div className={style.OurStrengthFoot}>
                 <h3 className={style.OurStrengthCardTitle}>{title}</h3>

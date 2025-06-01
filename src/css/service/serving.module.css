@@ -14,10 +14,10 @@
   justify-content: center;
 }
 .ServingTitle {
-  font-family: var(--font-ubuntu);
-  font-size: 35px;
-  font-weight: 600;
-  line-height: 40px;
+  font-family: "Ubuntu";
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 60px;
   color: var(--main-color);
 }
 .ServingCardContainer {
@@ -34,8 +34,8 @@
 }
 
 .ServingCardImage1 {
-  width: 200px;
-  height: 200px;
+  width: 130px;
+  height: 130px;
 }
 
 .ServingCardContent {
@@ -55,11 +55,11 @@
   align-items: center;
   justify-content: center;
 }
-.ServingCardStarContainer img {
+ServingCardStarContainer img {
   width: 20px;
   height: 20px;
-  color: green;
-  background-color: green;
+  filter: brightness(0) saturate(100%) invert(26%) sepia(99%) saturate(749%)
+    hue-rotate(91deg) brightness(93%) contrast(92%);
 }
 
 .name {

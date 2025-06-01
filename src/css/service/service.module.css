@@ -18,9 +18,11 @@
 }
 .ServiceCheckTitle {
   font-family: "Ubuntu", sans-serif;
-  font-size: 40px;
+  font-size: 45px;
   font-weight: 600;
   color: #08306b;
+  line-height: 100%;
+  letter-spacing: 0%;
 }
 .ServiceCheckRight {
   display: flex;
@@ -31,18 +33,26 @@
 }
 .ServiceCheckRightTitle {
   font-family: "Inter", sans-serif;
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   line-height: 35px;
   color: #08306b;
-  text-align: left;
+  text-align: justify;
 }
 .ServiceCheckRightButton {
   background-color: #026331;
-  color: #fff;
+  color: #f7fbff;
   border: none;
-  padding: 10px 40px;
+  padding: 20px 40px;
   border-radius: 50px;
   cursor: pointer;
   margin-top: 20px;
+}
+.ServiceCheckRightButton p {
+  font-family: "Palanquin Dark";
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  font-weight: 700;
+  color: #f7fbff;
 }

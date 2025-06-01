@@ -31,7 +31,7 @@ const NoTax = () => {
                 </div>
             </div>
             <div className={style.NoTaxButtonContainer}>
-                <button className={style.NoTaxButton}>Get Started</button>
+                <button className={style.NoTaxButton}>Book an Appointment Today</button>
             </div>
 
         </div>

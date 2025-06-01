@@ -1,7 +1,8 @@
 import React from 'react'
 import style from "../../css/service/serving.module.css"
-import image1 from "../../assets/service/kevin.png"
+// import image1 from "../../assets/service/kevin.png"
 import star from "../../assets/service/Star.png"
+import image from '../../assets/service/serviceCard.png'
 
 const Serving = () => {
     return (
@@ -15,7 +16,7 @@ const Serving = () => {
             <div className={style.ServingCardContainer}>
                 <div className={style.ServingCard}>
                     <div className={style.ServingCardImage}>
-                        <img src={image1} alt="profile image" className={style.ServingCardImage1} />
+                        <img src={image} alt="profile image" className={style.ServingCardImage1} />
                         <div className={style.ServingCardStarContainer}>
                             <img src={star} alt="star" />
                             <img src={star} alt="star" />

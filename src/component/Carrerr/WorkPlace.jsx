@@ -2,6 +2,7 @@ import React from 'react'
 import style from '../../css/Carreer/workplace.module.css'
 import workplaceImage from '../../assets/carrer/workPlace.png'
 import checkmark from '../../assets/carrer/checkmark.png'
+// import backImage from '../../assets/carrer/backImage.png'
 const WorkPlace = () => {
     return (
         <div className={style.workplaceContainer}>

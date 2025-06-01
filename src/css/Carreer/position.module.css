@@ -17,27 +17,28 @@
   line-height: 70px;
   color: #08306b;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 .positionCard:hover {
   transform: translateY(-5px);
 }
+.positionCardImageWrapper {
+  background-color: #08306b;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
 
 .positionCardImage {
-  width: 80px;
-  height: 80px;
-  padding: 10px;
-  background-color: #08306b;
-  border-radius: 50%;
-  object-fit: contain;
+  width: 22px;
+  height: 22px;
 }
 
 .positionCardTitle {
-  font-family: "Ubuntu", sans-serif;
-  font-weight: 600;
-  font-size: 20px;
-  color: #333;
-  margin: 0;
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: 500;
+  font-size: 30px;
+  color: #08306b;
 }
 
 /* Grid layout for cards */
@@ -52,7 +53,7 @@
 /* Remove this line from .positionCard:
      width: 30%; */
 .positionCard {
-  background: #ffffff;
+  background: #f7fbff;
   border-radius: 12px;
   padding: 30px 20px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
@@ -74,11 +75,11 @@
 .positionButton {
   background-color: #026331;
   color: #ffffff;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Palanquin Dark", sans-serif;
   font-weight: 600;
   font-size: 16px;
   border-radius: 12px;
-  padding: 20px 15px;
+  padding: 10px 15px;
   cursor: pointer;
   width: 30%;
   border: none;
@@ -96,4 +97,41 @@
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     padding: 20px;
   }
+}
+
+.positionCard {
+  background: #f7fbff;
+  border-radius: 12px;
+  padding: 30px 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  transition: transform 2s ease; /* slow overall card transition */
+}
+
+.positionCard:hover {
+  transform: translateY(-5px);
+}
+
+/* Add scale effect to image and title */
+.positionCardImage,
+.positionCardTitle {
+  transition: transform 2s ease;
+}
+
+/* On hover, increase size (scale by ~1.2 ≈ 10px visually depending on font and image size) */
+.positionCard:hover .positionCardImage,
+.positionCard:hover .positionCardTitle {
+  transform: scale(1.2);
+}
+
+.sub {
+  font-family: "Palanquin Dark", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  color: white;
+  text-align: center;
+  margin-top: -10px;
 }
