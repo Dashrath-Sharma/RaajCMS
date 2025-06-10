@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import styles from '@css/resource/faq.module.css';
+import styles from '@css/faq.module.css';
 import faqImage from '@assets/faqbg.png';
 import { ChevronDownIcon } from '@heroicons/react/24/outline';
 import ladyImage from "@assets/ladyimage-nobg.png"
@@ -55,6 +55,7 @@ const FAQ = () => {
 
     return (
         <div className={styles.faqContainer}>
+            <div className={styles.navPlaceholder}></div>
             {/* Hero Section */}
             <section className={styles.heroSection}>
                 <div className={styles.heroImage}>

@@ -263,3 +263,8 @@ textarea.fullWidth {
         width: 100%;
     }
 } 
+.navPlaceholder {
+    width: 100%;
+    height: 88px;
+    background-color: #fff;
+  }

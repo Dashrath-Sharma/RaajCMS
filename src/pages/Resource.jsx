@@ -29,6 +29,7 @@ export const ResourceCard = ({ image, title, description }) => {
 const Resource = () => {
     return (
         <div>
+            <div className={style.navPlaceholder}></div>
             <div className={style.ResourceContainer}>
                 <div className={style.blue}>
                     <p>Small Business Services</p>

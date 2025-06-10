@@ -131,3 +131,9 @@
   color: #fff;
   line-height: 24px;
 }
+
+.navPlaceholder {
+  width: 100%;
+  height: 88px;
+  background-color: #fff;
+}
