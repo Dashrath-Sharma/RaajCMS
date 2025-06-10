@@ -16,9 +16,25 @@
 /* global CSS file like index.css or App.css */
 
 :root {
+  /* Font families */
   --font-palanquin-dark: "Palanquin Dark", sans-serif;
   --font-ubuntu: "Ubuntu", sans-serif;
+  --font-inter: "Inter", sans-serif;
+
+  /* Colors */
   --color-dark-green: #026331;
   --main-color: #08306b;
-  --font-inter: "Inter", sans-serif;
+
+  /* Font sizes */
+  --font-size-xs: 0.625rem;    /* 10px */
+  --font-size-sm: 0.875rem;    /* 14px */
+  --font-size-base: 1rem;      /* 16px */
+  --font-size-lg: 1.125rem;    /* 18px */
+  --font-size-xl: 1.25rem;     /* 20px */
+  --font-size-2xl: 1.5rem;     /* 24px */
+  --font-size-3xl: 1.875rem;   /* 30px */
+  --font-size-4xl: 2rem;       /* 32px */
+  --font-size-5xl: 2.5rem;     /* 40px */
+  --font-size-6xl: 2.8125rem;  /* 45px */
+  --font-size-7xl: 3.125rem;   /* 50px */
 }

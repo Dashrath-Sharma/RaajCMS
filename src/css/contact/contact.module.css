@@ -127,3 +127,17 @@
 .small {
   font-size: 1rem;
 }
+
+.verticalCenter h3 {
+  font-family: "Ubuntu";
+  font-size: var(--font-size-2xl); /* 24px */
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+
+.verticalCenter p {
+  font-family: "Inter";
+  font-size: var(--font-size-base); /* 16px */
+  color: var(--main-color);
+  margin-bottom: 20px;
+}

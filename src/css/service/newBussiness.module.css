@@ -98,7 +98,7 @@
 
 .paraText p {
   font-family: Inter;
-  font-size: 30px;
+  font-size: var(--font-size-3xl); /* 30px */
   font-weight: 500;
   color: #08306b;
   text-align: center;
@@ -107,7 +107,7 @@
 }
 .paraText span {
   font-family: Inter;
-  font-size: 16px;
+  font-size: var(--font-size-base); /* 16px */
   font-weight: 400;
   color: #08306b;
 }

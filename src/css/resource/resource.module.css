@@ -16,7 +16,7 @@
 .blue p {
   font-family: "Inter";
   color: white;
-  font-size: 14px;
+  font-size: var(--font-size-sm);
   font-weight: 400;
   line-height: 22px;
   text-align: justify;
@@ -32,26 +32,21 @@
   background-color: #026331;
   color: white;
   padding: 10px 40px;
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 22px;
+  font-weight: 500;
+  font-size: var(--font-size-xl);
+  line-height: 100%;
+  letter-spacing: 0%;
   text-align: justify;
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
   border: none;
   cursor: pointer;
-  font-family: var(--font-palanquin-dark);
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 100%;
-  letter-spacing: 0%;
-  text-align: justify;
   margin-bottom: 20px;
 }
 .title {
-  font-family: var(--font-ubuntu);
+  font-family: "Ubuntu";
   font-weight: 700;
-  font-size: 40px;
+  font-size: var(--font-size-5xl);
   line-height: 100%;
   letter-spacing: 0%;
   text-align: justify;
@@ -59,12 +54,11 @@
   color: var(--main-color);
 }
 .description {
-  font-family: var(--font-palanquin-dark);
+  font-family: "Palanquin Dark";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  color: #08306b;
+  font-size: var(--font-size-base);
   line-height: 29px;
+  color: #08306b;
 }
 .ResourceCardContainer {
   width: 80%;
@@ -93,15 +87,14 @@
 }
 .ResourceCardHead {
   font-family: "Ubuntu", sans-serif;
-  font-size: 24px;
+  font-size: var(--font-size-2xl);
   font-weight: 700;
   color: white;
-  margin-bottom: 15px;
   margin: 1rem;
 }
 .ResourceCardPara {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   color: white;
   line-height: 24px;
   margin: 1rem;
@@ -127,7 +120,7 @@
 }
 .GreenCard h2 {
   font-family: "Inter", sans-serif;
-  font-size: 16px;
+  font-size: var(--font-size-base);
   color: #fff;
   line-height: 24px;
 }

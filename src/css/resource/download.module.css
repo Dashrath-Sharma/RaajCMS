@@ -3,6 +3,19 @@
   padding: 2rem;
 }
 
+.DownloadConatiner h2 {
+  font-size: var(--font-size-4xl); /* 36px */
+  font-weight: 700;
+  color: var(--main-color);
+  margin-bottom: 1rem;
+}
+
+.DownloadConatiner p {
+  font-size: var(--font-size-lg); /* 18px */
+  color: var(--main-color);
+  margin-bottom: 2rem;
+}
+
 .carouselWrapper {
   position: relative;
   max-width: 900px;

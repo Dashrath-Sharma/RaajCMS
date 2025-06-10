@@ -18,8 +18,8 @@
 }
 
 .NewBussinessHeadTitle {
-  font-family: var(--font-ubuntu);
-  font-size: 3.125rem; /* 50px */
+  font-family: "Ubuntu";  
+  font-size: var(--font-size-7xl); /* 3.125rem = 50px */
   font-weight: 700;
   line-height: 50px;
   color: var(--main-color);
@@ -81,8 +81,8 @@
 }
 
 .NewBussinessContentCard p {
-  font-family: var(--font-ubuntu);
-  font-size: 1.25rem; /* 20px */
+  font-family: "Ubuntu";
+  font-size: var(--font-size-xl); /* 1.25rem = 20px */
   font-weight: 400;
   color: #f7fbff;
 }

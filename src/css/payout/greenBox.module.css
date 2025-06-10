@@ -8,17 +8,17 @@
 }
 
 .GreenBoxHead {
-  font-family: var(--font-ubuntu);
+  font-family: "Ubuntu";
   color: #fff;
-  font-size: 1.5rem;
+  font-size: var(--font-size-xl); /* 1.5rem = 24px */
   font-weight: 600;
   text-align: center;
 }
 
 .GreenBoxText {
-  font-family: var(--font-inter);
+  font-family: "Inter";
   color: #fff;
-  font-size: 1rem;
+  font-size: var(--font-size-base); /* 1rem = 16px */
   text-align: center;
 }
 
@@ -27,4 +27,11 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+}
+
+.GreenBoxLikes {
+  font-family: "Inter";
+  color: #fff;
+  font-size: var(--font-size-base); /* 16px */
+  font-weight: 600;
 }

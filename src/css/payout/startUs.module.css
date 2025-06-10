@@ -9,8 +9,8 @@
 }
 
 .StartUsHead {
-  font-family: var(--font-ubuntu);
-  font-size: 2.1875rem; /* 35px */
+  font-family: "Ubuntu";
+  font-size: var(--font-size-4xl); /* 2.1875rem = 35px */
   font-weight: 600;
   color: #fff;
 }
@@ -37,17 +37,17 @@
 }
 
 .StartUsCardHead {
-  font-family: var(--font-ubuntu);
-  font-size: 1.5rem; /* 24px */
+  font-family: "Ubuntu";
+  font-size: var(--font-size-2xl); /* 1.5rem = 24px */
   font-weight: 600;
   color: var(--main-color);
   text-align: center;
 }
 
 .StartUsCardText {
-  font-family: var(--font-inter);
+  font-family: "Inter";
   color: var(--main-color);
-  font-size: 1rem; /* 16px */
+  font-size: var(--font-size-base); /* 1rem = 16px */
   font-weight: 400;
   text-align: center;
 }
