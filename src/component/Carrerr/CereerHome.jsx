@@ -1,6 +1,6 @@
 import React from 'react';
-import heroImage from '../../assets/carrer/CarrerProfileImage.png';
-import backImage from '../../assets/carrer/homeBack.png';
+import heroImage from '@assets/carrer/CarrerProfileImage.png';
+import backImage from '@assets/carrer/homeBack.png';
 
 const CareerHome = () => {
     return (
@@ -9,9 +9,8 @@ const CareerHome = () => {
             width: '100vw',
             height: '100vh',
             background: '#f7fbff',
-
+            position: 'relative'
         }}>
-
             <div style={{
                 width: '70%',
                 display: 'flex',
@@ -92,12 +91,11 @@ const CareerHome = () => {
                 {/* Image Wrapper */}
                 <div style={{
                     position: 'relative',
-                    left: '-20%',
-                    width: '300px',
-                    height: '300px',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center'
+                    left: '-45%',
+                    width: '600px',
+                    height: '600px',
+                    overflow: 'hidden',
+                    borderRadius: '40px',
                 }}>
                     {/* Top Left Border */}
                     {/* <div style={{
@@ -129,13 +127,14 @@ const CareerHome = () => {
                         alt="background"
                         style={{
                             position: 'absolute',
-                            width: '230px',
-                            height: '300px',
+                            width: '92%',
+                            height: '80%',
                             objectFit: 'cover',
-                            zIndex: 0,
-                            top: 0,
-                            left: 0,
-                            borderRadius: '12px'
+                            zIndex: '1',
+                            top: '76px',
+                            left: '50%',
+                            borderRadius: '40px',
+                            transform: 'translateX(-50%)',
                         }}
                     />
 
@@ -144,10 +143,14 @@ const CareerHome = () => {
                         src={heroImage}
                         alt="career"
                         style={{
-                            width: '600px',
-                            height: '400px',
-                            objectFit: 'contain',
-                            zIndex: 1
+                        width: '159%',
+                        height: '129%',
+                        objectFit: 'contain',
+                        zIndex: '2',
+                        position: 'absolute',
+                        bottom: '-127px',
+                        left: '50%',
+                        transform: 'translateX(-45%)',
                         }}
                     />
                 </div>

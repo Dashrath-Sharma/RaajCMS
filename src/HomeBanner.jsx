@@ -1,8 +1,6 @@
 import React, { useState, useEffect } from 'react'
-import style from './css/home.module.css'
-import image1 from './assets/homeImage.png'
-
-
+import style from '@css/home.module.css'
+import image1 from '@assets/homeImage.png'
 
 const words = ["Bookkeeping", "Tax", "Payroll", "Accounting", "Bookkeeping"];
 
@@ -25,7 +23,7 @@ const HomeBanner = () => {
                             Expert{" "}
                             <span
                                 className={`${style.homeBannerContentTitleGreen} ${style.wordSlide}`}
-                                key={currentIndex} // Ensures re-render & animation on word change
+                                key={currentIndex}
                             >
                                 {words[currentIndex]}
                             </span>
@@ -38,12 +36,14 @@ const HomeBanner = () => {
                             for small businesses and individuals. We work hard for the
                             hardest-working.
                         </p>
-                        <button className={style.homeBannerContentButton}>
-                            Book an Introductory Tax Consultation
-                        </button>
-                        <button className={style.homeBannerContentButtonGreen}>
-                            Book an Introductory Payroll Strategy Call
-                        </button>
+                        <div className={style.homeBannerContentButtons}>
+                            <button className={style.homeBannerContentButton}>
+                                Book an Introductory Tax Consultation
+                            </button>
+                            <button className={style.homeBannerContentButtonGreen}>
+                                Book an Introductory Payroll Strategy Call
+                            </button>
+                        </div>
                     </div>
                 </div>
             </div>

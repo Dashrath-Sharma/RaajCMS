@@ -1,9 +1,9 @@
 
 import React from 'react'
-import style from '../../css/payout/ListImage.module.css';
-import down from "../../assets/payout/down.png";
-import check from "../../assets/payout/checkmark.png";
-import image from "../../assets/payout/ladyPayout.png";
+import style from '@css/payout/listImage.module.css';
+import down from "@assets/payout/down.png";
+import check from "@assets/payout/checkmark.png";
+import image from "@assets/payout/ladyPayout.png";
 
 const ListImage = () => {
     return (

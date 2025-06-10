@@ -1,21 +1,19 @@
-
-
-import HomeBanner from '../HomeBanner';
 import React from 'react'
-import HomeStarCard from '../component/HomeStarCard'
-import HomeAbout from '../component/HomeAbout'
-import { TextCardContainer } from '../component/ImageTextCard'
-import LeftRightCardContainer from '../component/LeftRight'
-import WhyBussiness from '../component/WhyBussiness'
-import Accounting from '../component/Accounting'
-import HomeNav from '../component/HomeNav'
-import Booking from '../component/Booking';
+import HomeBanner from '../HomeBanner';
+import HomeStarCard from '@component/HomeStarCard'
+import HomeAbout from '@component/HomeAbout'
+import { TextCardContainer } from '@component/ImageTextCard'
+import LeftRightCardContainer from '@component/LeftRight'
+import WhyBussiness from '@component/WhyBussiness'
+import Accounting from '@component/Accounting'
+// import HomeNav from '@component/HomeNav'
+// import Booking from '@component/Booking';
+import star from '@assets/Star.png';
 
 const Home = () => {
+    console.log({star})
     return (
         <div>
-
-
             <HomeBanner />
             <HomeStarCard />
             <HomeAbout />
@@ -23,7 +21,6 @@ const Home = () => {
             <LeftRightCardContainer />
             <WhyBussiness />
             <Accounting />
-
         </div>
     )
 }

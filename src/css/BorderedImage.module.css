@@ -1,0 +1,62 @@
+.imageContainer {
+    position: relative;
+    display: inline-block;
+    padding: 20px;
+}
+
+.image {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 20px;
+}
+
+.borderTopLeft,
+.borderBottomRight {
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    border: 3px solid #08306b;
+    z-index: 1;
+}
+
+.borderTopLeft {
+    top: 0;
+    left: 0;
+    border-right: none;
+    border-bottom: none;
+}
+
+.borderBottomRight {
+    bottom: 0;
+    right: 0;
+    border-left: none;
+    border-top: none;
+}
+
+/* Curved border styles */
+.curved.borderTopLeft {
+    border-top-left-radius: 20px;
+}
+
+.curved.borderBottomRight {
+    border-bottom-right-radius: 20px;
+}
+
+/* Straight border styles */
+.straight.borderTopLeft,
+.straight.borderBottomRight {
+    border-radius: 0;
+}
+
+/* Hover effects */
+.imageContainer:hover .borderTopLeft,
+.imageContainer:hover .borderBottomRight {
+    border-color: #026331;
+    transition: border-color 0.3s ease;
+}
+
+.imageContainer:hover .image {
+    transform: scale(1.02);
+    transition: transform 0.3s ease;
+} 

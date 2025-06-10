@@ -1,8 +1,9 @@
 .WhyBussinessContainer {
-  padding: 50px;
+  width: 100vw;
   background-color: #f5f5f5;
-  width: 100%;
+  padding: 50px 0;
 }
+
 .WhyBussinessTitle {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
@@ -11,30 +12,46 @@
   letter-spacing: 0%;
   text-align: center;
   color: #08306b;
+  margin: 0;
 }
 
 .WhyBussinessContent {
-  /* border: 1px solid red; */
   width: 60%;
+  margin: 0 auto 50px;
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: 0 auto;
 }
 
 .WhyBussinessCardContainer {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 20px;
+  flex-wrap: wrap;
 }
 
 .WhyBussinessCard {
+  width: 30%;
+  min-width: 300px;
   background-color: #e9f2fc;
   border-radius: 35px;
   padding: 30px;
-  border: 1px solid rebeccapurple;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  transition: transform 0.3s ease;
 }
+
+.WhyBussinessCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
 .WhyBussinessCardImageContainer {
   height: 60px;
   width: 60px;

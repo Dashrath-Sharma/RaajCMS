@@ -1,3 +1,55 @@
+.homeContainer {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+
+.homeSection {
+    width: 100%;
+    padding: 4rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .homeSection {
+        padding: 2rem 0;
+    }
+}
+
+/* Specific section spacing */
+.homeSection:nth-child(1) { /* Banner section */
+    padding-top: 0;
+}
+
+.homeSection:nth-child(2) { /* Star Card section */
+    background-color: var(--main-color);
+}
+
+.homeSection:nth-child(3) { /* About section */
+    background-color: #f7fbff;
+}
+
+.homeSection:nth-child(4) { /* Text Card section */
+    background-color: #ffffff;
+}
+
+.homeSection:nth-child(5) { /* Left Right section */
+    background-color: var(--main-color);
+}
+
+.homeSection:nth-child(6) { /* Why Business section */
+    background-color: #f7fbff;
+}
+
+.homeSection:nth-child(7) { /* Accounting section */
+    background-color: var(--main-color);
+}
+
 .homeBanner {
   background-color: #ffff;
   width: 100vw;
@@ -96,7 +148,7 @@
   border-radius: 10px;
   display: flex;
   align-items: center;
-  padding: 15px 25px 15px 25px;
+  padding: 15px 25px;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
@@ -105,15 +157,17 @@
   margin-top: 20px;
   border: 1px solid #026331;
   border-radius: 50px;
-  width: 60%;
+  width: fit-content;
+  white-space: nowrap;
 }
+
 .homeBannerContentButtonGreen {
   background-color: #026331;
   border: none;
   border-radius: 10px;
   display: flex;
   align-items: left;
-  padding: 15px 25px 15px 25px;
+  padding: 15px 25px;
   font-weight: 400;
   font-size: 14px;
   line-height: 100%;
@@ -121,39 +175,54 @@
   color: #fff;
   margin-top: 20px;
   border-radius: 50px;
-  width: 60%;
+  width: fit-content;
+  white-space: nowrap;
+}
+
+/* Add a container for the buttons to ensure consistent width */
+.homeBannerContentButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+}
+
+/* Make all buttons in the container the same width */
+.homeBannerContentButtons button {
+  width: 100%;
+  min-width: max-content;
 }
 
 .homeImageWrapper {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  left: -20%;
-  bottom: 0;
-  width: 100%;
-  height: 70%;
-  display: flex;
-  margin-top: 70px;
+    position: absolute;
+    left: -20%;
+    bottom: 0;
+    width: 100%;
+    height: 70%;
+    display: flex;
+    margin-top: 70px;
 }
 
 .imageCard {
-  position: relative;
-  background-color: #e6f0fb;
-  border-radius: 40px 0 0 0;
-  width: 400px;
-  height: 100%;
-  overflow: hidden;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    background-color: #e6f0fb;
+    border-radius: 40px 0 0 0;
+    width: 400px;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    padding: 20px;
 }
 
 .ladyImage {
-  max-height: 100%;
-  object-fit: cover;
-  object-position: bottom;
+    max-height: 100%;
+    object-fit: cover;
+    object-position: bottom;
+    width: 100%;
+    height: 100%;
 }
 
 @keyframes slideUpFade {
@@ -170,4 +239,15 @@
 .wordSlide {
   animation: slideUpFade 0.4s ease-in-out;
   display: inline-block;
+}
+
+:global(button), button {
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+:global(button):hover, button:hover {
+  filter: brightness(0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transform: translateY(-2px) scale(1.03);
 }

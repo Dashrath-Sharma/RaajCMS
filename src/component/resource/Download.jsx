@@ -28,8 +28,8 @@ const Download = () => {
             <div className={style.carouselWrapper}>
                 {/* Arrows positioned above the carousel */}
                 <div className={style.arrowContainer}>
-                    <img src={arr1} alt="back" onClick={() => handleScroll('left')} className={style.arrowBtn} />
                     <img src={arr2} alt="forward" onClick={() => handleScroll('right')} className={style.arrowBtn1} />
+                    <img src={arr1} alt="back" onClick={() => handleScroll('left')} className={style.arrowBtn} />
                 </div>
 
                 {/* Image Scroll Container */}

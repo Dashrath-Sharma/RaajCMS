@@ -64,19 +64,45 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
   width: 30%;
+  transition: transform 0.3s ease;
+}
+
+.AccountingCard:hover {
+  transform: translateY(-5px);
+}
+
+.ImageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+  overflow: hidden;
+  border-radius: 8px;
 }
 
 .ImageWrapper img {
   width: 100%;
   height: auto;
   border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.AccountingCard:hover .ImageWrapper img {
+  transform: scale(1.05);
 }
 
 .CardHeader {
   display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 5px;
+  gap: 10px;
 }
+
 .CardTitle {
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
@@ -84,6 +110,8 @@
   line-height: 40px;
   letter-spacing: 0%;
   color: #030266;
+  margin: 0;
+  text-align: center;
 }
 
 .arrowDiv {
@@ -93,27 +121,23 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 5px;
-  transition: all 0.3s ease; /* Smooth animation */
+  transition: transform 0.3s ease;
 }
 
-.arrowDiv:hover {
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
 .arrowDiv img {
   width: 10px;
   height: 10px;
 }
 
 .LearnMoreBtn {
-  margin-top: 12px;
+  margin-top: 8px;
   padding: 12px 36px;
   background-color: #08306b;
   border: none;
   color: #fff;
   border-radius: 26px;
   cursor: pointer;
+  transition: transform 0.3s ease;
 }
 
 .CardDescription {
@@ -124,4 +148,16 @@
   text-align: center;
   letter-spacing: 0%;
   color: #030266;
+  margin: 0;
+}
+
+:global(button), button {
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+:global(button):hover, button:hover {
+  filter: brightness(0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transform: translateY(-2px) scale(1.03);
 }

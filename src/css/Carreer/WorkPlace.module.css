@@ -10,15 +10,19 @@
   padding: 50px;
   position: relative;
 }
+
 .workplaceImage {
   position: absolute;
-  top: 20%;
-  left: 50%;
+  top: 50%;
+  left: 55%;
   object-fit: cover;
+  transform: translateY(-50%);
 }
+
 .workplaceImage img {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 300px;
+  border-radius: 40px;
   object-fit: cover;
 }
 
@@ -27,9 +31,10 @@
   background-color: white;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  padding: 50px;
+  padding: 50px 100px;
+  margin-left: 150px;
 }
 
 .workplaceTitle {
@@ -47,16 +52,36 @@
   font-size: 18px;
   font-weight: 400;
   color: #08306b;
+  margin-bottom: 10px;
 }
+
 .workplaceList {
   display: flex;
-  gap: 20px;
+  justify-content: space-between;
+  gap: 60px;
+  margin-top: 30px;
+  width: 100%;
+  max-width: 800px;
 }
+
 .workplaceListLeft {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
+  flex: 1;
 }
+
+.workplaceListLeft > div {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.workplaceListLeft img {
+  width: 24px;
+  height: 24px;
+}
+
 .workplaceListText {
   font-family: "Inter", sans-serif;
   font-size: 18px;

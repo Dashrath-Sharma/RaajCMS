@@ -1,9 +1,9 @@
 import React from 'react'
-import style from '../../css/Carreer/StayUs.module.css'
-import msg from '../../assets/carrer/msg.png'
-import Indded from '../../assets/carrer/Indeed.png'
-import linkedIn from '../../assets/carrer/linkedIn.png'
-import glassdoor from '../../assets/carrer/glassdoor.png'
+import style from '@css/Carreer/stayUs.module.css'
+import msg from '@assets/carrer/msg.png'
+import Indded from '@assets/carrer/Indeed.png'
+import linkedIn from '@assets/carrer/linkedIn.png'
+import glassdoor from '@assets/carrer/glassdoor.png'
 
 const StayUs = () => {
     return (

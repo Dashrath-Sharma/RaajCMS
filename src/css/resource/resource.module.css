@@ -1,14 +1,17 @@
 .ResourceContainer {
-  padding-top: 80px;
-  padding-inline: 50px;
   width: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #f7fbff;
 }
 .blue {
-  padding: 50px;
-  background-color: var(--main-color);
+  width: 100%;
+  background-color: #08306b;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 25px 50px;
 }
 .blue p {
   font-family: "Inter";
@@ -19,11 +22,11 @@
   text-align: justify;
 }
 .HomeContainer {
-  padding: 0px 50px;
+  width: 80%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding-bottom: 50px;
 }
 .Resourcebutton {
   background-color: #026331;
@@ -43,6 +46,7 @@
   line-height: 100%;
   letter-spacing: 0%;
   text-align: justify;
+  margin-bottom: 20px;
 }
 .title {
   font-family: var(--font-ubuntu);
@@ -63,70 +67,67 @@
   line-height: 29px;
 }
 .ResourceCardContainer {
+  width: 80%;
   display: flex;
-  flex-direction: row;
-  gap: 20px;
   justify-content: space-between;
-  align-items: center;
+  gap: 30px;
+  padding: 50px 0;
 }
 .ResourceCard {
-  width: 30%;
-  border-radius: 10px;
-  padding: 20px;
-  background-color: var(--main-color);
-  margin-top: 20px;
+  flex: 1;
+  border-radius: 12px;
+  background: var(--main-color);
+  color: white;
+  border-radius: 40px;
 }
-
 .ResourceCardImage {
   width: 100%;
-  height: 100%;
+  height: 270px;
+  margin-bottom: 20px;
 }
-
 .ResourceCardImage img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
-
 .ResourceCardHead {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 20px;
-  color: #fff;
-  line-height: 25px;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 15px;
+  margin: 1rem;
 }
 .ResourceCardPara {
-  font-family: Inter;
-  font-weight: 500;
-  font-size: 15px;
-  color: #fff;
-  line-height: 20px;
-  margin-block: 20px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  color: white;
+  line-height: 24px;
+  margin: 1rem;
 }
 .GreenCardConatainer {
   width: 30%;
-  height: 100%;
-  padding: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
 .GreenCard {
-  display: flex;
-  background-color: #026331;
+  background: #026331;
   padding: 20px;
-  border-radius: 20px;
-  width: 100%;
-  text-wrap: wrap;
-  gap: 20px;
+  border-radius: 12px;
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  flex: 1
 }
 .GreenCard img {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
 }
 .GreenCard h2 {
-  font-family: var(--font-ubuntu);
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 30px;
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
   color: #fff;
+  line-height: 24px;
 }

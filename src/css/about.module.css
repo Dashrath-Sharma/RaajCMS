@@ -1,72 +1,103 @@
 .aboutContainer {
-  width: 100%;
-  padding: 50px;
+  width: 100vw;
   background-color: #ffffff;
+  padding: 50px 0;
   display: flex;
-  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+}
+
+.aboutImage {
+  width: 50%;
+  max-width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .aboutContent {
+  width: 50%;
+  max-width: 600px;
   display: flex;
-  /* align-items: center; */
-  justify-content: center;
   flex-direction: column;
+  gap: 20px;
 }
 
 .aboutContentTitle {
-  font-family: "Ubuntu";
-  font-size: 40px;
+  font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  color: #08306b;
+  font-size: 40px;
   line-height: 50px;
-  letter-spacing: 0%;
+  color: #08306b;
+  margin: 0;
+  text-align: left;
 }
 
 .aboutContentDescription {
-  font-family: "Inter";
-  font-weight: 500;
-  font-size: 20px;
-  color: #08306b;
-  line-height: 30px;
-  letter-spacing: 0%;
-}
-.aboutContentButton {
-  background-color: #ffff;
-  border: none;
-  border-radius: 50px;
-  display: flex;
-  align-items: left;
-  padding: 15px 30px;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
+  line-height: 24px;
+  color: #08306b;
+  margin: 0;
+  text-align: left;
+}
+
+.aboutContentButtons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: fit-content;
+}
+
+.aboutContentButton,
+.aboutContentButtonGreen {
+  width: 100%;
+  min-width: max-content;
+  padding: 15px 30px;
+  font-size: 16px;
   line-height: 100%;
-  letter-spacing: 0%;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.aboutContentButton {
+  background-color: #ffff;
   color: #026331;
   border: 1px solid #026331;
-  width: 60%;
-  margin-top: 20px;
 }
+
 .aboutContentButton:hover {
   background-color: #62cd95;
   border: none;
 }
+
 .aboutContentButtonGreen {
   background-color: #026331;
-  border: none;
-  border-radius: 50px;
-  display: flex;
-  align-items: left;
-  padding: 15px 30px;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  letter-spacing: 0%;
   color: #fff;
-  width: 60%;
+  border: none;
   margin-top: 20px;
 }
 
 .image {
-  width: 400px;
-  height: 400px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
 }
+
+:global(button), button {
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+}
+
+:global(button):hover, button:hover {
+  filter: brightness(0.95);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transform: translateY(-2px) scale(1.03);
+}
+
+

@@ -52,7 +52,8 @@
   flex-direction: row;
   gap: 20px;
   justify-content: space-between;
-  align-items: center;
+  width: 90%;
+  padding: 1rem;
 }
 .QuestiomHead {
   font-family: var(--font-ubuntu);

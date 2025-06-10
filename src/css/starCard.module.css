@@ -9,24 +9,56 @@
   flex-wrap: wrap;
 }
 
-/* Individual Card */
-.card {
+.cardWrapper {
   width: 300px;
   height: 250px;
-  background: #08519c;
-  border-radius: 20px;
+  perspective: 1000px;
+  cursor: pointer;
+}
+
+.cardOuter {
+  width: 100%;
+  height: 100%;
   position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.cardWrapper:hover .cardOuter {
+  transform: rotateY(180deg);
+}
+
+.cardInner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+  border-radius: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 20px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-  transition: transform 0.3s ease;
 }
 
-.card:hover {
-  transform: translateY(-5px);
+.cardFront {
+  background: #08519c;
+  color: #ffffff;
+  transform: rotateY(0deg);
+}
+
+.cardBack {
+  background: #ffffff;
+  color: #000000;
+  transform: rotateY(180deg);
 }
 
 /* Star in top-right corner */
@@ -68,6 +100,22 @@
   transition: transform 0.3s ease;
 }
 
+.textCardContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-color: #fff;
+  width: 100vw;
+  gap: 20px;
+}
+
+.backText {
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+}
+
 .imageTextCard {
   width: 30%;
   height: 200px;
@@ -76,86 +124,38 @@
   justify-content: center;
   flex-direction: column;
   background-color: #026331;
-  /* gap: 10px; */
-  margin: 10px;
+  margin: 0;
   border-radius: 20px;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
+
 .imageTextCard:hover {
   background-color: white;
   color: green;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
+
 .imageTextCard:hover .imageTextCardTitle {
   color: green;
+  transition: color 0.3s ease-in-out;
 }
+
 .imageTextCard:hover .image {
   background-color: green;
   padding: 10px;
   border-radius: 10px;
+  transition: all 0.3s ease-in-out;
 }
 
-.textCardContainer {
-  display: flex;
-  /* justify-content: space-between; */
-  flex-wrap: wrap;
-  padding: 50px;
-  background-color: #fff;
-  width: 100vw;
-}
 .imageDiv {
   background-color: white;
   padding: 10px;
   border-radius: 10px;
-}
-.cardOuter {
-  width: 300px;
-  height: 250px;
-  perspective: 1000px;
+  transition: all 0.3s ease-in-out;
 }
 
-.cardInner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.6s;
-}
-
-.cardOuter:hover .cardInner {
-  transform: rotateY(180deg);
-}
-
-.cardFront,
-.cardBack {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
-}
-
-.cardFront {
-  background: #08519c;
-  color: #ffffff;
-  z-index: 2;
-}
-
-.cardBack {
-  background: #ffffff;
-  color: #000000;
-  transform: rotateY(180deg);
-}
-
-.backText {
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-}
 .imageTextCardTitle {
   font-family: var(--font-ubuntu);
   font-weight: 700;
@@ -165,4 +165,5 @@
   margin-top: 10px;
   margin-bottom: 10px;
   width: 60%;
+  transition: color 0.3s ease-in-out;
 }

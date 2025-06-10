@@ -10,36 +10,55 @@
 }
 
 .arrowContainer {
-  position: absolute;
-  top: -20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 1rem;
-  z-index: 5;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
 }
 
-.arrowBtn {
-  width: 32px;
-  height: 32px;
+.arrowBtn, .arrowBtn1 {
+  width: 40px;
+  height: 40px;
   cursor: pointer;
-  padding: 10px;
-  background-color: red;
+  padding: 8px;
+  background-color: #e9f2fc;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e0e0e0;
 }
-.arrowBtn1 {
-  width: 32px;
-  height: 32px;
-  cursor: pointer;
-  padding: 10px;
-  background-color: blue;
+
+.arrowBtn:hover, .arrowBtn1:hover {
+  background-color: #08306b;
+  border-color: #08306b;
 }
+
+.arrowBtn:hover img, .arrowBtn1:hover img {
+  filter: brightness(0) invert(1);
+}
+
+.arrowBtn:disabled, .arrowBtn1:disabled {
+  /* background-color: #e9f2fc; */
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+.arrowBtn img, .arrowBtn1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transition: all 0.3s ease;
+}
+
 .carousel {
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
-  gap: 1rem;
-  padding: 1rem 0;
+  gap: 2rem;
+  padding: 2rem 1rem;
   scrollbar-width: none;
+  margin: 0 -1rem;
 }
 
 .carousel::-webkit-scrollbar {
@@ -47,9 +66,25 @@
 }
 
 .card {
-  flex: 0 0 45%; /* Show 2 full and 1 partial */
+  flex: 0 0 45%;
   min-width: 300px;
   max-width: 350px;
-  border-radius: 10px;
+  border-radius: 12px;
   object-fit: cover;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  background: #fff;
+  padding: 0.5rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 8px;
 }
