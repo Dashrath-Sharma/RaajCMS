@@ -125,7 +125,7 @@
 }
 .homeBannerContentTitle {
   font-family: "Ubuntu";
-  font-size: 50px;
+  font-size: var(--font-size-7xl); /* 50px */
   font-weight: 700;
   color: #08306b;
   line-height: 60px;
@@ -135,7 +135,7 @@
 .homeBannerContentDescription {
   font-family: "Inter";
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--font-size-base); /* 16px */
   line-height: 24px;
   letter-spacing: -0.09%;
   color: #08306b;
@@ -150,7 +150,7 @@
   align-items: center;
   padding: 15px 25px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--font-size-sm); /* 14px */
   line-height: 100%;
   letter-spacing: 0%;
   color: #026331;
@@ -169,7 +169,7 @@
   align-items: left;
   padding: 15px 25px;
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--font-size-sm); /* 14px */
   line-height: 100%;
   letter-spacing: 0%;
   color: #fff;
@@ -250,4 +250,12 @@
   filter: brightness(0.95);
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
   
+}
+
+.subtitle {
+    font-size: 0.875rem; /* 14px */
+}
+
+.text {
+    font-size: 0.875rem; /* 14px */
 }

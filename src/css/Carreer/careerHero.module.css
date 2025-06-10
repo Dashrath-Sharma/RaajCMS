@@ -26,3 +26,12 @@
 .careerNavItem:hover {
   color: #026331;
 }
+.text {
+    font-size: 1.125rem; /* 18px */
+}
+.careerHeroText {
+  font-family: var(--font-inter);
+  font-size: var(--font-size-lg); /* 18px */
+  font-weight: 400;
+  color: #026331;
+}

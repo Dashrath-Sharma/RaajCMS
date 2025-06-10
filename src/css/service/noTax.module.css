@@ -15,7 +15,7 @@
 
 .NoTaxHeadTitle {
   font-family: var(--font-inter);
-  font-size: 30px;
+  font-size: var(--font-size-3xl); /* 30px */
   font-weight: 700;
   color: #fff;
   display: flex;
@@ -25,7 +25,7 @@
 .NoTaxHeadDescription {
   font-family: var(--font-palanquin-dark);
   font-weight: 400;
-  font-size: 24px;
+  font-size: var(--font-size-2xl); /* 24px */
   line-height: 39px;
   letter-spacing: 0%;
   text-align: center;
@@ -67,7 +67,7 @@
 .NoTaxContentLeftItemText {
   font-family: var(--font-palanquin);
   font-weight: 600;
-  font-size: 20px;
+  font-size: var(--font-size-xl); /* 20px */
   line-height: 30px; /* ✅ Match icon height */
   letter-spacing: 0;
   color: #fff;

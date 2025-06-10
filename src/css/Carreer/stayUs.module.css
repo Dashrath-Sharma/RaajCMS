@@ -12,7 +12,7 @@
 .stayUsTitle {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 64px;
+  font-size: 4rem;
   line-height: 63px;
   letter-spacing: 0%;
   text-align: center;
@@ -21,7 +21,7 @@
 .stayUsText {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 20px;
   letter-spacing: 0%;
   text-align: center;

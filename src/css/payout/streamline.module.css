@@ -19,7 +19,7 @@
 
 .NewBussinessHeadTitle {
   font-family: var(--font-ubuntu);
-  font-size: 50px;
+  font-size: 3.125rem; /* 50px */
   font-weight: 700;
   line-height: 50px;
   color: var(--main-color);
@@ -82,7 +82,7 @@
 
 .NewBussinessContentCard p {
   font-family: var(--font-ubuntu);
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: 400;
   color: #f7fbff;
 }

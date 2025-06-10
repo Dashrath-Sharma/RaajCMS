@@ -79,7 +79,7 @@
 
 /* Title below image */
 .title {
-  font-size: 18px;
+  font-size: var(--font-size-lg); /* 18px */
   font-weight: bold;
   color: #ffffff;
   text-align: center;
@@ -111,7 +111,7 @@
 }
 
 .backText {
-  font-size: 18px;
+  font-size: var(--font-size-lg); /* 18px */
   font-weight: bold;
   text-align: center;
 }
@@ -160,7 +160,7 @@
   font-family: var(--font-ubuntu);
   font-weight: 700;
   color: #fff;
-  font-size: 30px;
+  font-size: var(--font-size-3xl); /* 30px */
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
