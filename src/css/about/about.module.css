@@ -19,7 +19,7 @@
 
 .OurValueTitle {
   font-family: var(--font-ubuntu);
-  font-size: 30px;
+  font-size: 1.875rem; /* 30px */
   font-weight: 600;
   color: var(--main-color);
 }
@@ -41,7 +41,7 @@
 }
 .OurValueCardTitle {
   font-family: var(--font-ubuntu);
-  font-size: 20px;
+  font-size: 1.25rem; /* 20px */
   font-weight: 600;
   color: #fff;
   line-height: 30px;
@@ -92,7 +92,7 @@
 
 .OurValueCardContentItemText {
   font-family: var(--font-ubuntu);
-  font-size: 16px;
+  font-size: 1rem; /* 16px */
   font-weight: 400;
   color: #fff;
   line-height: 20px;

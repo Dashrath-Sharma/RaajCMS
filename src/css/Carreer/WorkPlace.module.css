@@ -39,7 +39,7 @@
 
 .workplaceTitle {
   font-family: "Ubuntu", sans-serif;
-  font-size: 45px;
+  font-size: 2.8125rem; /* 45px */
   line-height: 50px;
   font-weight: 700;
   color: #08306b;
@@ -49,7 +49,7 @@
 
 .workplaceText {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   font-weight: 400;
   color: #08306b;
   margin-bottom: 10px;
@@ -84,7 +84,7 @@
 
 .workplaceListText {
   font-family: "Inter", sans-serif;
-  font-size: 18px;
+  font-size: 1.125rem; /* 18px */
   font-weight: 400;
   color: #08306b;
 }

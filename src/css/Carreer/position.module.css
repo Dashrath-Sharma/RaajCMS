@@ -135,3 +135,19 @@
   text-align: center;
   margin-top: -10px;
 }
+
+.title {
+  font-size: var(--font-size-6xl); /* 48px */
+}
+.subtitle {
+  font-size: var(--font-size-3xl); /* 30px */
+}
+.text {
+  font-size: var(--font-size-base); /* 16px */
+}
+.large {
+  font-size: var(--font-size-4xl); /* 32px */
+}
+.description {
+  font-size: var(--font-size-xl); /* 20px */
+}

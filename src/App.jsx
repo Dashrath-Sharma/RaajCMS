@@ -1,3 +1,4 @@
+import './css/global.css'
 // import image from './assets/image.png'
 import React from "react";
 import { Routes, Route } from "react-router-dom";

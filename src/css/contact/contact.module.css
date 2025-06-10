@@ -8,7 +8,7 @@
 }
 .ContactUsHeading {
   font-family: var(--font-ubuntu);
-  font-size: 2.5rem;
+  font-size: var(--font-size-5xl); /* 40px */
   font-weight: 600;
   color: var(--main-color);
 }
@@ -21,26 +21,26 @@
 }
 .ContactUsFormPara {
   font-family: var(--font-ubuntu);
-  font-size: 1.2rem;
+  font-size: var(--font-size-lg); /* 18px */
   color: #fff;
   width: 50%;
 }
 
 .head {
   font-family: var(--font-ubuntu);
-  font-size: 30px;
+  font-size: var(--font-size-3xl); /* 30px */
   color: #fff;
   margin-bottom: 20px;
 }
 .para {
   font-family: var(--font-ubuntu);
-  font-size: 20px;
+  font-size: var(--font-size-xl); /* 20px */
   color: #fff;
   margin-bottom: 20px;
 }
 .formHead {
   font-family: var(--font-ubuntu);
-  font-size: 20px;
+  font-size: var(--font-size-xl); /* 20px */
   color: #fff;
   margin-bottom: 20px;
 }
@@ -53,7 +53,7 @@
   border-radius: 5px;
   border: none;
   font-family: var(--font-ubuntu);
-  font-size: 1rem;
+  font-size: var(--font-size-base); /* 16px */
   display: flex;
   flex-direction: column;
   color: white;
@@ -102,4 +102,28 @@
 
 .contentCenter {
   justify-content: space-between !important;
+}
+
+.title {
+  font-size: 2.5rem;
+}
+
+.subtitle {
+  font-size: 1.2rem;
+}
+
+.text {
+  font-size: 1.875rem;
+}
+
+.description {
+  font-size: 1.25rem;
+}
+
+.info {
+  font-size: 1.25rem;
+}
+
+.small {
+  font-size: 1rem;
 }
