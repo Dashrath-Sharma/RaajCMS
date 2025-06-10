@@ -249,5 +249,5 @@
 :global(button):hover, button:hover {
   filter: brightness(0.95);
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  transform: translateY(-2px) scale(1.03);
+  
 }

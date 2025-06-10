@@ -11,6 +11,7 @@ import Resource from "./pages/Resource";
 import ContactUs from "./pages/ContactUs";
 import AmountPayable from "./pages/AmountPayable";
 import Administrative from "./pages/Administrative";
+import FAQ from "@pages/FAQ";
 const App = () => {
   return (
     <Routes>
@@ -24,6 +25,7 @@ const App = () => {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/amount" element={<AmountPayable />} />
         <Route path="/administrative" element={<Administrative />} />
+        <Route path="/faq" element={<FAQ />} />
 
         <Route path="*" element={<Home />} />
 
