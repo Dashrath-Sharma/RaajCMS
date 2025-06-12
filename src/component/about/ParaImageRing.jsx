@@ -7,7 +7,10 @@ const ParaImageRing = () => {
         <div className={style.ParaImageRingContainer}>
             <div className={style.ParaImageRing}>
                 <div className={style.imageWrapper}>
-                    <div className={style.signature}>Kevin<br /><span>Bautier</span></div>
+                    <div className={style.signature}>
+                        Kevin
+                          <span>Kevin Bautier</span></div>
+                  
                     <div className={style.ring}>
                         <img src={kevin} alt="Kevin Bautier" className={style.profileImg} />
                     </div>
