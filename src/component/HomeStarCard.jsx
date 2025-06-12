@@ -7,7 +7,7 @@ import style from '@css/starCard.module.css';
 
 // ✅ Card component
 // ✅ Card component with hover flip
-const Card = ({ midImage, title }) => {
+const Card = ({ midImage, title,content }) => {
     return (
         <div className={style.cardWrapper}>
             <div className={style.cardOuter}>
@@ -18,7 +18,7 @@ const Card = ({ midImage, title }) => {
                         <p className={style.title}>{title}</p>
                     </div>
                     <div className={`${style.card} ${style.cardBack}`}>
-                        <p className={style.backText}>Priyansh Pandey<br />from Mirzapur</p>
+                        <p className={style.backText}>{content}</p>
                     </div>
                 </div>
             </div>
@@ -29,15 +29,15 @@ const Card = ({ midImage, title }) => {
 
 const HomeStarCard = () => {
     const cards = [
-        { id: 1, midImage: experience, title: "Driven by You" },
-        { id: 2, midImage: handshake, title: "Backed by Expertise" },
-        { id: 3, midImage: link, title: "Always Connected" }
+        { id: 1, midImage: experience, title: "Driven by You",content:'Stay connected and supported with our dedicated experts, available anytime'  },
+        { id: 2, midImage: handshake, title: "Backed by Expertise",  content:'Grow confidently with our trusted, partner-loved team.'},
+        { id: 3, midImage: link, title: "Always Connected" ,content:'Your goals shape our focus. We succeed by helping you grow.' }
     ]
 
     return (
         <div className={style.cardContainer}>
             {cards.map((card) => (
-                <Card key={card.id} midImage={card.midImage} title={card.title} />
+                <Card key={card.id} midImage={card.midImage} title={card.title} content={card.content} />
             ))}
         </div>
     )
