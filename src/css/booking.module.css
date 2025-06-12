@@ -24,7 +24,7 @@
 .section h3 {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: var(--font-size-2xl); /* 24px */
   text-transform: capitalize;
   color: var(--main-color);
 }
@@ -58,7 +58,7 @@
 .subText {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--font-size-base); /* 16px */
   text-transform: capitalize;
   color: var(--main-color);
   transition: color 0.3s ease;
@@ -67,7 +67,7 @@
 .text {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 10px;
+  font-size: var(--font-size-xs); /* 10px */
   color: var(--main-color);
   margin-block: 10px;
   transition: color 0.3s ease;
@@ -126,7 +126,7 @@
   color: #fff;
   font-family: "Palanquin Dark", sans-serif;
   font-weight: 400;
-  font-size: 10px;
+  font-size: var(--font-size-xs); /* 10px */
   border: none;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -140,7 +140,7 @@
 .imageHead {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 24px;
+  font-size: var(--font-size-2xl); /* 24px */
   text-transform: capitalize;
   color: var(--main-color);
 }
@@ -148,7 +148,7 @@
 .imagePara {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
-  font-size: 16px;
+  font-size: var(--font-size-base); /* 16px */
   color: var(--main-color);
 }
 
@@ -184,5 +184,4 @@
 :global(button):hover, button:hover {
   filter: brightness(0.95);
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  
 }

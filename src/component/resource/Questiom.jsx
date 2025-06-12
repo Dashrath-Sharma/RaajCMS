@@ -12,7 +12,11 @@ const Questiom = () => {
                 <h2 className={style.QuestiomTittle}>Ask a question for a topic</h2>
                 <div className={style.QuestiomInputContainer}>
                     <input type="text" className={style.QuestiomInput} placeholder="Search.." />
-                    {/* <img src="https://cdn-icons-png.flaticon.com/512/1828/1828859.png" alt="Search Icon" className={style.QuestiomSearchIcon} /> */}
+                    <div className={style.circleIcon}>
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" strokeWidth={1.5} stroke="currentColor" className={style.searchIcon}>
+                            <path strokeLinecap="round" strokeLinejoin="round" d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                        </svg>
+                    </div>
 
                 </div>
             </div>

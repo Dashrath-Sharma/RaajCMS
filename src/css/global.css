@@ -14,6 +14,37 @@
   --font-size-8xl: 4rem;      /* 64px */
 }
 
+@media (min-width: 1024px) {
+  html {
+  font-size: 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  html {
+  font-size: 12px;
+  }
+}
+
+@media (min-width: 1366px) {
+  html {
+  font-size: 14px;
+  }
+}
+
+@media (min-width: 1680px) {
+  html {
+  font-size: 16px;
+  }
+}
+
+@media (min-width: 1920px) {
+  html {
+  font-size: 16px;
+  }
+}
+
+
 /* Utility classes for font sizes */
 .text-xs { font-size: var(--font-size-xs); }
 .text-sm { font-size: var(--font-size-sm); }

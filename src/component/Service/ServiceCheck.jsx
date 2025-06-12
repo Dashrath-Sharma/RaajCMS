@@ -19,7 +19,7 @@ const ServiceCheck = () => {
                 <p className={style.ServiceCheckRightTitle}>Avoid tax-time stress. Our detailed checklist tells you exactly what forms and documents to gather, so you’re ready for any tax scenario.
                 </p>
                 <button className={style.ServiceCheckRightButton}>
-                    <p>Make your Checklist</p>
+                    <p>Make your <b>Checklist</b></p>
                 </button>
 
             </div>

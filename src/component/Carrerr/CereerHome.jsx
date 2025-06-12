@@ -1,6 +1,5 @@
 import React from 'react';
 import heroImage from '@assets/carrer/CarrerProfileImage.png';
-import backImage from '@assets/carrer/homeBack.png';
 
 const CareerHome = () => {
     return (
@@ -91,10 +90,9 @@ const CareerHome = () => {
                 {/* Image Wrapper */}
                 <div style={{
                     position: 'relative',
-                    left: '-45%',
+                    left: '-70%',
                     width: '600px',
                     height: '600px',
-                    overflow: 'hidden',
                     borderRadius: '40px',
                 }}>
                     {/* Top Left Border */}
@@ -122,7 +120,7 @@ const CareerHome = () => {
                     }} /> */}
 
                     {/* Background Image */}
-                    <img
+                    {/* <img
                         src={backImage}
                         alt="background"
                         style={{
@@ -136,7 +134,7 @@ const CareerHome = () => {
                             borderRadius: '40px',
                             transform: 'translateX(-50%)',
                         }}
-                    />
+                    /> */}
 
                     {/* Hero Image */}
                     <img

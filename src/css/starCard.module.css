@@ -88,7 +88,6 @@
 /* text Card */
 .textCard {
   background-color: #026331;
-
   border-radius: 20px;
   position: relative;
   display: flex;
@@ -166,4 +165,13 @@
   margin-bottom: 10px;
   width: 60%;
   transition: color 0.3s ease-in-out;
+}
+
+@media (max-width: 1025px) {
+  .cardWrapper {
+  width: 250px;
+  height: 250px;
+  perspective: 1000px;
+  cursor: pointer;
+}
 }

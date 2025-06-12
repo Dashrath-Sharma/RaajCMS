@@ -7,7 +7,7 @@
 .WhyBussinessTitle {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: var(--font-size-5xl); /* 40px */
   line-height: 50px;
   letter-spacing: 0%;
   text-align: center;
@@ -78,7 +78,7 @@
 .WhyBussinessCardImageText p {
   font-family: "Inter";
   font-weight: 500;
-  font-size: 16px;
+  font-size: var(--font-size-base); /* 16px */
   line-height: 100%;
   letter-spacing: 0%;
   text-align: justify;
@@ -87,7 +87,7 @@
 .WhyBussinessCardImageText span {
   font-family: "Inter";
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--font-size-sm); /* 14px */
   line-height: 100%;
   letter-spacing: 0%;
   text-align: justify;
@@ -100,7 +100,7 @@
   color: #08306b;
   font-family: "Inter";
   font-weight: 400;
-  font-size: 14px;
+  font-size: var(--font-size-sm); /* 14px */
   line-height: 22px;
   letter-spacing: 0%;
   text-align: justify;
@@ -115,7 +115,7 @@
 .name {
   font-family: "Inter";
   font-weight: 700;
-  font-size: 16px;
+  font-size: var(--font-size-base); /* 16px */
   line-height: 100%;
   letter-spacing: 0%;
   text-align: justify;

@@ -6,7 +6,8 @@
 
 .ServiceCheckContainer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 3rem;
 }
 
 .ServiceCheckContent {
@@ -16,6 +17,7 @@
   width: 50%;
   gap: 20px;
 }
+
 .ServiceCheckTitle {
   font-family: "Ubuntu", sans-serif;
   font-size: var(--font-size-6xl); /* 45px */
@@ -24,35 +26,38 @@
   line-height: 100%;
   letter-spacing: 0%;
 }
+
 .ServiceCheckRight {
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   flex-direction: column;
-  width: 50%;
+  width: 40%;
 }
+
 .ServiceCheckRightTitle {
-  font-family: "Inter", sans-serif;
+  font-family: "Inter";
   font-size: var(--font-size-2xl); /* 22px */
   font-weight: 700;
   line-height: 35px;
   color: #08306b;
   text-align: justify;
 }
+
 .ServiceCheckRightButton {
   background-color: #026331;
   color: #f7fbff;
   border: none;
-  padding: 20px 40px;
+  padding: 18px 40px;
   border-radius: 50px;
   cursor: pointer;
   margin-top: 20px;
 }
+
 .ServiceCheckRightButton p {
   font-family: "Palanquin Dark";
   font-size: var(--font-size-xl); /* 20px */
   line-height: 100%;
   letter-spacing: 0%;
-  font-weight: 700;
   color: #f7fbff;
 }

@@ -9,10 +9,10 @@
   align-items: center;
   margin-bottom: 20px;
   border-bottom: 2px solid var(--main-color);
-  padding-bottom: 10px;
+  padding-bottom: 25px;
 }
 .QuestiomHeader h1 {
-  font-size: 2rem;
+  font-size: var(--font-size-2xl); /* 24px */
   color: white;
   width: fit-content;
   margin: 0;
@@ -28,16 +28,20 @@
   height: 40px;
 }
 
+.QuestiomInputContainer {
+  position: relative;
+}
+
 .QuestiomInput {
-  width: 100%;
-  height: 50px;
-  border: none;
-  border-radius: 50px;
-  padding: 10px;
-  font-size: 1rem;
-  box-sizing: border-box;
-  background-color: var(--main-color);
-  color: white;
+      width: 100%;
+    height: 34px;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 30px;
+    font-size: var(--font-size-lg);
+    box-sizing: border-box;
+    background-color: var(--main-color);
+    color: white;
 }
 .QuestiomCardConatiner {
   display: flex;
@@ -58,7 +62,7 @@
 .QuestiomHead {
   font-family: var(--font-ubuntu);
   font-weight: 700;
-  font-size: 40px;
+  font-size: var(--font-size-5xl); /* 40px */
   line-height: 100%;
   letter-spacing: 0%;
   text-align: justify;
@@ -66,12 +70,31 @@
   color: var(--main-color);
 }
 .Para {
-  font-family: var(--font-palanquin-dark);
+  font-family: "Palanquin Dark";
   font-weight: 400;
-  font-size: 16px;
-  line-height: 100%;
-  color: #08306b;
+  font-size: var(--font-size-base); /* 16px */
   line-height: 29px;
+  color: #08306b;
   width: 60%;
   text-align: center;
+}
+
+.circleIcon {
+  background: var(--main-color);
+  padding: 1px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 95%;
+  transform: translate(-50%, -50%);
+}
+
+.searchIcon {
+  width: 30px;
+  color: #fff;
+  font-weight: bold;
 }
