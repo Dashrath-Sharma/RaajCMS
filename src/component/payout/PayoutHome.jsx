@@ -27,11 +27,6 @@ const PayoutHome = () => {
             <div className={styles.rightSection}>
                 {/* Hero Image Container with Corner Borders */}
                 <div className={styles.imageContainer}>
-                    {/* Top Left Border */}
-                    <div className={styles.topLeftBorder} />
-
-                    {/* Bottom Right Border */}
-                    <div className={styles.bottomRightBorder} />
 
                     {/* Hero Image */}
                     <img

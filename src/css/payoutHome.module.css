@@ -16,12 +16,12 @@
 }
 
 .contentWrapper {
-  width: 100%;
+  width: 70%;
 }
 
 .payrollButton {
-  font-family: var(--font-ubuntu);
-  font-size: var(--font-size-xs); /* 12px */
+  font-family: "Ubuntu";
+  font-size: 12px; /* 12px */
   font-weight: 700;
   color: #08306b;
   line-height: 30px;
@@ -35,7 +35,7 @@
 }
 
 .payoutTitle {
-  font-family: var(--font-ubuntu);
+  font-family: "Ubuntu";
   font-size: var(--font-size-5xl); /* 40px */
   font-weight: 700;
   color: #08306b;
@@ -44,7 +44,7 @@
 }
 
 .payoutDescription {
-  font-family: var(--font-inter);
+  font-family: "Inter";
   font-size: var(--font-size-xl); /* 20px */
   font-weight: 400;
   color: #08519C;
@@ -63,31 +63,10 @@
 
 .imageContainer {
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 400px;
+  transform: translateX(-50%);
 }
 
-.topLeftBorder {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 60px;
-  height: 60px;
-  border-top: 4px solid #fff;
-  border-left: 4px solid #fff;
-  border-top-left-radius: 12px;
-}
-
-.bottomRightBorder {
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 60px;
-  height: 60px;
-  border-bottom: 4px solid blue;
-  border-right: 4px solid white;
-  border-bottom-right-radius: 12px;
-}
 
 .heroImage {
   width: 100%;

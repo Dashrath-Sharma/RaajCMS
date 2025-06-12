@@ -1,6 +1,5 @@
 import React from 'react';
-import HomeNav from '../HomeNav';
-import heroImage from '../../assets/about/aboutHome.png';
+import heroImage from '../../assets/Accounting/accountpayble.png';
 
 
 const AmountHome = () => {
@@ -21,7 +20,7 @@ const AmountHome = () => {
                 paddingLeft: '5%',
                 paddingRight: '5%'
             }}>
-                <div>
+                <div style={{width: '85%'}}>
                     <p style={{
                         fontFamily: 'Ubuntu',
                         fontSize: 12,
@@ -83,33 +82,7 @@ const AmountHome = () => {
             }}>
                 {/* Hero Image with Corner Borders */}
                 <div style={{
-                    position: 'relative',
-                    width: '300px',
-                    height: '300px'
                 }}>
-                    {/* Top Left Border */}
-                    <div style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '60px',
-                        height: '60px',
-                        borderTop: '4px solid #fff',
-                        borderLeft: '4px solid #fff',
-                        borderTopLeftRadius: '12px'
-                    }} />
-
-                    {/* Bottom Right Border */}
-                    <div style={{
-                        position: 'absolute',
-                        bottom: 0,
-                        right: 0,
-                        width: '60px',
-                        height: '60px',
-                        borderBottom: '4px solid blue',
-                        borderRight: '4px solid white',
-                        borderBottomRightRadius: '12px'
-                    }} />
 
                     {/* Hero Image */}
                     <img
@@ -119,6 +92,7 @@ const AmountHome = () => {
                             width: '100%',
                             height: '100%',
                             objectFit: 'contain',
+                            transform: 'translateX(-140px) scale(1.2)',
                             zIndex: 1
                         }}
                     />

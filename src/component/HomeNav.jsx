@@ -24,46 +24,48 @@ const HomeNav = () => {
         <>
             <div className={style.navPlaceholder} />
             <div className={`${style.homeNav} ${isScrolled ? style.scrolled : ''}`}>
-                <Link to="/">
-                    <img className={style.logo} src={logo} alt="logo" />
-                </Link>
+                <div className={style.navContainer}>
+                    <Link to="/">
+                        <img className={style.logo} src={logo} alt="logo" />
+                    </Link>
 
-                {/* SERVICES */}
-                <div className={style.navDropdown}>
-                    <span className={style.navItem}>
-                        SERVICES{' '}
-                        <img
-                            src={arrow}
-                            alt="arrow"
-                            className={style.arrowIcon}
-                        />
-                    </span>
-                    <div className={style.dropdownContent}>
-                        <Booking />
+                    {/* SERVICES */}
+                    <div className={style.navDropdown}>
+                        <span className={style.navItem}>
+                            SERVICES{' '}
+                            <img
+                                src={arrow}
+                                alt="arrow"
+                                className={style.arrowIcon}
+                            />
+                        </span>
+                        <div className={style.dropdownContent}>
+                            <Booking />
+                        </div>
                     </div>
-                </div>
 
-                <Link to="/carrer" className={style.navItem}>CARRERS</Link>
-                <Link to="/payout" className={style.navItem}>PAYOUT</Link>
+                    <Link to="/carrer" className={style.navItem}>CARRERS</Link>
+                    <Link to="/payout" className={style.navItem}>PAYOUT</Link>
 
-                {/* RESOURCES */}
-                <div className={style.navDropdown}>
-                    <span className={style.navItem}>
-                        RESOURCES{' '}
-                        <img
-                            src={arrow}
-                            alt="arrow"
-                            className={style.arrowIcon}
-                        />
-                    </span>
-                    <div className={style.dropdownContent}>
-                        <Booking />
+                    {/* RESOURCES */}
+                    <div className={style.navDropdown}>
+                        <span className={style.navItem}>
+                            RESOURCES{' '}
+                            <img
+                                src={arrow}
+                                alt="arrow"
+                                className={style.arrowIcon}
+                            />
+                        </span>
+                        <div className={style.dropdownContent}>
+                            <Booking />
+                        </div>
                     </div>
+
+                    <Link to="/contact" className={style.navItem}>CONTACT US</Link>
+                    <Link to="/about" className={style.navItem}>ABOUT US</Link>
+
                 </div>
-
-                <Link to="/contact" className={style.navItem}>CONTACT US</Link>
-                <Link to="/about" className={style.navItem}>ABOUT US</Link>
-
                 <div className={style.navButtons}>
                     <button className={style.navButton}>
                         <img src={LetMeet} alt="Let's Meet" />
@@ -73,7 +75,7 @@ const HomeNav = () => {
                         <img src={client} alt="Client Portal" />
                         <p>CLIENT PORTAL</p>
                     </button>
-                </div>
+                    </div>
             </div>
         </>
     );

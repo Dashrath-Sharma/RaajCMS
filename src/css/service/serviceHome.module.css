@@ -20,7 +20,7 @@
 }
 
 .taxButton {
-  font-size: var(--font-size-xl); /* 20px */
+  font-size: 12px; /* 20px */
   font-weight: 500;
   color: #08306B;
   line-height: 30px;
@@ -45,7 +45,7 @@
   border: none;
   border-radius: 50px;
   color: #fff;
-  padding: 12px 80px;
+  padding: 8px 60px;
   font-size: var(--font-size-2xl); /* 22px */
   margin-top: 30px;
   cursor: pointer;
@@ -60,18 +60,6 @@
   align-items: flex-end;
   position: relative;
   border-radius: 10px;
-}
-
-.circleBackground {
-  position: absolute;
-  top: 20%;
-  right: -20%;
-  transform: translateX(-50%);
-  width: 350px;
-  height: 350px;
-  background-color: #E9F2FC;
-  border-radius: 50%;
-  z-index: 10;
 }
 
 .heroImage {

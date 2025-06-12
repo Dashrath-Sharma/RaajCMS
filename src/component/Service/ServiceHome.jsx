@@ -1,5 +1,5 @@
 import React from 'react';
-import heroImage from '../../assets/service/ServiceHome.png';
+import heroImage from '../../assets/service/ServiceHero1.png';
 import styles from '../../css/service/serviceHome.module.css';
 
 const ServiceHome = () => {
@@ -18,15 +18,13 @@ const ServiceHome = () => {
                     </h2>
 
                     <button className={styles.fileTaxButton}>
-                        File your Taxes
+                        File your <b>Taxes</b>
                     </button>
                 </div>
             </div>
 
             {/* Right Section */}
             <div className={styles.rightSection}>
-                {/* Circle Behind Head */}
-                <div className={styles.circleBackground} />
 
                 {/* Image */}
                 <img

@@ -40,6 +40,10 @@ const ListImage = () => {
                 <div className={style.ListImageImageWrapper}>
                     <img src={image} alt="image" className={style.ListImageImage} />
                 </div>
+                        <div className={style.name}>
+                            <div className={style.fontIslandMoments}>Ana</div>
+                            <div className={style.fontUnbuntu}>Ana Bautier</div>
+                        </div>
             </div>
 
 

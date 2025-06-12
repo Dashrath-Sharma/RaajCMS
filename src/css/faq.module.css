@@ -137,11 +137,18 @@
     background-color: var(--main-color);
     display: flex;
     align-items: center;
+    justify-content: end;
     gap: 4rem;
+    padding: 7rem 5rem;
+    position: relative;
+    overflow: hidden;
 }
 
 .image {
     object-fit: contain;
+    position: absolute;
+    max-width: 48%;
+    left: 0;
 }
 
 .formContainer {
@@ -149,8 +156,9 @@
     background: #ffffff;
     padding: 1.5rem;
     border-radius: 40px;
-    max-width: 500px;
+    max-width: 315px;
     height: fit-content;
+    margin-right: 8rem;
 }
 
 .formTitle {
@@ -199,8 +207,8 @@
 }
 
 textarea.fullWidth {
-    min-height: 120px;
-    resize: vertical;
+    height: 120px;
+    resize: none;
 }
 
 .submitButton {

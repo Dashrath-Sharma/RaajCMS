@@ -18,7 +18,7 @@
   font-family: "Ubuntu";
   font-size: var(--font-size-6xl); /* 45px */
   font-weight: 700;
-  line-height: 60px;
+  line-height: 40px;
   color: var(--main-color);
 }
 
@@ -28,17 +28,20 @@
   display: flex;
   padding: 30px 40px;
   border-radius: 60px;
+  gap: 4rem;
 }
 
 .ServingCard {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column; 
+  gap: .5rem;
 }
 
 .ServingCardImage1 {
-  width: 130px;
-  height: 130px;
+  width: 90px;
+  height: 90px;
 }
 
 .ServingCardContent {
@@ -62,14 +65,14 @@
 }
 
 .ServingCardStarContainer img {
-  width: 20px;
-  height: 20px;
+  width: 15px;
+  height: 15px;
   filter: brightness(0) saturate(100%) invert(26%) sepia(99%) saturate(749%)
     hue-rotate(91deg) brightness(93%) contrast(92%);
 }
 
 .name {
-  font-family: Iinter';
+  font-family: 'Inter';
   font-size: var(--font-size-base); /* 16px */
   font-weight: 500;
   line-height: 30px;
@@ -88,7 +91,7 @@
 }
 
 .ServingHeadTitle {
-  font-family: var(--font-ubuntu);
+  font-family: "Ubuntu";
   font-size: var(--font-size-6xl); /* 45px */
   font-weight: 700;
   line-height: 50px;
@@ -96,14 +99,14 @@
 }
 
 .ServingContentCard p {
-  font-family: var(--font-ubuntu);
+  font-family: "Ubuntu";
   font-size: var(--font-size-xl); /* 20px */
   font-weight: 400;
   color: #f7fbff;
 }
 
 .ServingContentCard span {
-  font-family: var(--font-inter);
+  font-family: 'Inter';
   font-size: var(--font-size-base); /* 16px */
   font-weight: 400;
   color: #f7fbff;

@@ -2,7 +2,7 @@ import React from 'react';
 import icon1 from '../../assets/amount/search1.png';
 import icon2 from '../../assets/amount/search2.png';
 import icon3 from '../../assets/amount/search3.png';
-import icon4 from '../../assets/amount/search3.png';
+import icon4 from '../../assets/amount/downArrow.png';
 import style from '../../css/amount/amountCard.module.css';
 
 const data = [

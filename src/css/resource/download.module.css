@@ -26,25 +26,54 @@
     display: flex;
     gap: 1rem;
     justify-content: center;
+    margin-bottom: 1rem;
 }
 
-.arrowBtn, .arrowBtn1 {
-  width: 40px;
-  height: 40px;
-  cursor: pointer;
-  padding: 8px;
-  background-color: #e9f2fc;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s ease;
-  border: 1px solid #e0e0e0;
+.circleIcon {
+    width: 48px;
+    height: 48px;
+    cursor: pointer;
+    padding: 12px;
+    background-color: #fff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
-.arrowBtn:hover, .arrowBtn1:hover {
-  background-color: #08306b;
-  border-color: #08306b;
+.circleIcon:hover {
+    background-color: var(--main-color);
+    transform: scale(1.05);
+}
+
+.circleIcon:hover .icon {
+    stroke: #fff;
+}
+
+.circleIcon.active {
+    background-color: var(--main-color);
+    transform: scale(0.95);
+}
+
+.circleIcon.active .icon {
+    stroke: #fff;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    stroke: var(--main-color);
+    transition: all 0.3s ease;
+}
+
+.rightArrow:hover {
+    transform: scale(1.05);
+}
+
+.rightArrow.active {
+    transform: scale(0.95);
 }
 
 .arrowBtn:hover img, .arrowBtn1:hover img {
@@ -72,6 +101,7 @@
   padding: 2rem 1rem;
   scrollbar-width: none;
   margin: 0 -1rem;
+  max-height: 450px;
 }
 
 .carousel::-webkit-scrollbar {
