@@ -40,6 +40,26 @@
   display: flex;
   justify-content: center;
   gap: 30px;
-  padding: 50px;
-  background-color: #f5f5f5;
+  padding-top: 50px;
+}
+.MapDiv{
+  width: 100%
+}
+.MapImg{
+  width: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+  margin-bottom: 10px;
+}
+.MapTextH3,.MapTextP,.MapTextA{
+  font-family: var(--font-inter);
+color: var(--main-color);
+margin-bottom: .5rem;
+}
+.MapTextP{
+margin-bottom: 1rem;
+}
+
+.MapTextA{
+text-decoration: none;
 }
