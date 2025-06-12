@@ -15,6 +15,7 @@ const data = [
     {
         img: image2,
         head: 'Meet your  Payroll Expert',
+        levitate: true,
         text: 'Based on your unique business payroll needs, you ll be matched with a payroll expert who will provide personalized service and support.'
     },
     {
@@ -26,9 +27,9 @@ const data = [
 ]
 
 
-const StartUsCard = ({ img, head, text }) => {
+const StartUsCard = ({ img, head, text, levitate }) => {
     return (
-        <div className={style.StartUsCard}>
+        <div className={`${style.StartUsCard} ${levitate ? style.levitate : ''}`}>
             <div className={style.StartUsCardImage}>
                 <img src={img} alt="image" />
             </div>
@@ -42,12 +43,15 @@ const StartUsCard = ({ img, head, text }) => {
 const StartUs = () => {
     return (
         <div className={style.StartUsContainer}>
-            <h2 className={style.StartUsHead}>Start us today</h2>
+            <h2 className={style.StartUsHead}>Get Started</h2>
             <div className={style.StartUsCradContainer}>
                 {data.map((item, index) => (
-                    <StartUsCard key={index} img={item.img} head={item.head} text={item.text} />
+                    <StartUsCard key={index} img={item.img} head={item.head} text={item.text} levitate={item.levitate} />
                 ))}
 
+            </div>
+            <div className={style.buttonContainer}>
+                <button className={style.bookButton}>Book a Consultation</button>
             </div>
         </div>
     )

@@ -24,14 +24,14 @@
   cursor: pointer;
   font-family: "Palanquin", sans-serif;
   font-weight: 500;
-  font-size: 17px;
+  font-size: var(--font-size-lg);
   line-height: 30px;
   letter-spacing: 0%;
 }
 .AccountingTitle {
   font-family: "Ubuntu", sans-serif;
   font-weight: 700;
-  font-size: 40px;
+  font-size: var(--font-size-5xl);
   line-height: 70px;
   letter-spacing: 0%;
   color: #ffffff;
@@ -41,7 +41,7 @@
 .AccountingParagraph {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   line-height: 30px;
   letter-spacing: 0%;
   color: #ffffff;
@@ -53,6 +53,7 @@
   gap: 24px;
   flex-wrap: wrap;
   margin-top: 32px;
+  justify-content: center;
 }
 
 .AccountingCard {
@@ -106,7 +107,7 @@
 .CardTitle {
   font-family: "Ubuntu", sans-serif;
   font-weight: 900;
-  font-size: 26px;
+  font-size: var(--font-size-2xl);
   line-height: 40px;
   letter-spacing: 0%;
   color: #030266;
@@ -130,7 +131,7 @@
 }
 
 .LearnMoreBtn {
-  margin-top: 8px;
+  margin-top: auto;
   padding: 12px 36px;
   background-color: #08306b;
   border: none;
@@ -143,7 +144,7 @@
 .CardDescription {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 18px;
+  font-size: var(--font-size-lg);
   line-height: 30px;
   text-align: center;
   letter-spacing: 0%;

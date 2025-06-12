@@ -17,13 +17,19 @@
   padding: 40px;
   border-radius: 30px;
 }
+
 .CradHead {
-  font-family: var(--font-ubuntu);
+  font-family: "Ubuntu";
+  font-size: var(--font-size-2xl); /* 24px */
+  font-weight: 700;
   color: #fff;
   text-align: center;
 }
+
 .CradPara {
-  font-family: var(--font-inter);
+  font-family: "Inter";
+  font-size: var(--font-size-base); /* 16px */
+  font-weight: 400;
   color: #fff;
   text-align: center;
 }

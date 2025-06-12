@@ -34,7 +34,7 @@
 
 .NoTaxContent {
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
   gap: 50px;
   display: flex;
   width: 100%;
@@ -91,7 +91,7 @@
   padding: 20px 40px;
   font-family: "Palanquin Dark";
   font-weight: 600;
-  font-size: 20px;
+  font-size: var(--font-size-xl); /* 20px */
   line-height: 30px;
   color: #fff;
   border: none;

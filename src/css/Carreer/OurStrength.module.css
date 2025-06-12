@@ -116,21 +116,21 @@
 }
 
 .title {
-  font-size: var(--font-size-3xl); /* 30px */
+  font-size: 1.875rem; /* 30px */
 }
 
 .subtitle {
-  font-size: var(--font-size-lg); /* 18px */
+  font-size: 1.125rem; /* 18px */
 }
 
 .large {
-  font-size: var(--font-size-6xl); /* 48px */
+  font-size: 3rem; /* 48px */
 }
 
 .text {
-  font-size: var(--font-size-xl); /* 20px */
+  font-size: 1.25rem; /* 20px */
 }
 
 .description {
-  font-size: var(--font-size-4xl); /* 32px */
+  font-size: 1.25rem; /* 32px */
 }

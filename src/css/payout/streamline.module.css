@@ -1,7 +1,8 @@
 .NewBussinessContainer {
-  width: 100vw;
+  /* width: 100vw; */
+  height: 100vh;
   background-color: #f7fbff;
-  padding: 50px;
+  padding: 0 50px;
   position: relative; /* for absolute positioning of the image */
   overflow: hidden;
 }
@@ -18,8 +19,8 @@
 }
 
 .NewBussinessHeadTitle {
-  font-family: var(--font-ubuntu);
-  font-size: 3.125rem; /* 50px */
+  font-family: "Ubuntu";  
+  font-size: var(--font-size-7xl); /* 3.125rem = 50px */
   font-weight: 700;
   line-height: 50px;
   color: var(--main-color);
@@ -28,6 +29,7 @@
 .NewBussinessContent {
   display: flex;
   width: 100%;
+  height: 70%;
   align-items: center;
   justify-content: space-between;
   position: relative;
@@ -42,21 +44,9 @@
   z-index: 1;
 }
 
-.NewBussinessImageContainer::before {
-  content: "";
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  width: 360px;
-  height: 360px;
-  background-color: var(--main-color);
-  border-radius: 50%;
-  z-index: 0;
-}
-
 .NewBussinessImageContainer img {
-  width: 300px;
-  height: 300px;
+  /* width: 300px; */
+  height: 45%;
   object-fit: cover;
   position: relative;
   z-index: 2;
@@ -65,8 +55,9 @@
 .NewBussinessContentRight {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 5rem;
   margin-left: auto;
+  margin-right: 5%;
   z-index: 2;
 }
 
@@ -81,8 +72,8 @@
 }
 
 .NewBussinessContentCard p {
-  font-family: var(--font-ubuntu);
-  font-size: 1.25rem; /* 20px */
+  font-family: "Ubuntu";
+  font-size: var(--font-size-xl); /* 1.25rem = 20px */
   font-weight: 400;
   color: #f7fbff;
 }
@@ -92,4 +83,37 @@
   height: 30px;
   background-color: #f7fbff;
   margin-left: 20px;
+}
+
+@media (width: 1024px) and (height: 768px) {
+  .NewBussinessContainer {
+    height: 79vh;
+  }
+}
+
+@media (width: 1280px) and (height: 800px) {
+  .NewBussinessContainer {
+    height: 76vh;
+  }
+}
+
+@media (width: 1280px) and (height: 768px) {
+  .NewBussinessContainer {
+    height: 79vh;
+  }
+}
+
+@media (width: 1366px) and (height: 768px) {
+  .NewBussinessContainer {
+    height: 79vh;
+  }
+}
+
+@media (width: 1680px) and (height: 1050px) {
+  .NewBussinessContainer {
+    height: 80vh;
+  }
+  .NewBussinessImageContainer img {
+    height: 68%;
+  }
 }
