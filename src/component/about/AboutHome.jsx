@@ -1,6 +1,6 @@
 import React from 'react';
-import HomeNav from '../HomeNav';
 import heroImage from '../../assets/about/aboutHome.png';
+import style from '@css/about/about.module.css'
 
 const PayoutHome = () => {
     return (
@@ -20,7 +20,9 @@ const PayoutHome = () => {
                 paddingLeft: '5%',
                 paddingRight: '5%'
             }}>
-                <div>
+                <div style={{
+                    width: '84%'
+                }}>
                     <p style={{
                         fontFamily: 'Ubuntu',
                         fontSize: 12,
@@ -82,45 +84,14 @@ const PayoutHome = () => {
                 position: 'relative'
             }}>
                 {/* Hero Image with Corner Borders */}
-                <div style={{
-                    position: 'relative',
-                    width: '300px',
-                    height: '300px'
-                }}>
-                    {/* Top Left Border */}
-                    <div style={{
-                        position: 'absolute',
-                        top: 0,
-                        left: 0,
-                        width: '60px',
-                        height: '60px',
-                        borderTop: '4px solid #fff',
-                        borderLeft: '4px solid #fff',
-                        borderTopLeftRadius: '12px'
-                    }} />
-
-                    {/* Bottom Right Border */}
-                    <div style={{
-                        position: 'absolute',
-                        bottom: 0,
-                        right: 0,
-                        width: '60px',
-                        height: '60px',
-                        borderBottom: '4px solid blue',
-                        borderRight: '4px solid white',
-                        borderBottomRightRadius: '12px'
-                    }} />
+                <div
+                className={style.aboutImageContainer}>
 
                     {/* Hero Image */}
                     <img
+                    className={style.aboutImage}
                         src={heroImage}
                         alt="hero"
-                        style={{
-                            width: '100%',
-                            height: '100%',
-                            objectFit: 'contain',
-                            zIndex: 1
-                        }}
                     />
                 </div>
             </div>

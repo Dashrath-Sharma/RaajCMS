@@ -1,0 +1,71 @@
+.serviceContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  background: #f7fbff;
+}
+
+.leftSection {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+  background: #fff;
+}
+
+.contentWrapper {
+  width: 100%;
+}
+
+.taxButton {
+  font-size: 12px; /* 20px */
+  font-weight: 500;
+  color: #08306B;
+  line-height: 30px;
+  background: #E9F2FC;
+  padding: 15px 40px;
+  border-radius: 10px;
+  border: none;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+
+.serviceTitle {
+  font-size: var(--font-size-5xl); /* 40px */
+  font-weight: 700;
+  color: #08306b;
+  line-height: 50px;
+}
+
+.fileTaxButton {
+  font-family: "Palanquin Dark";
+  background: #026331;
+  border: none;
+  border-radius: 50px;
+  color: #fff;
+  padding: 8px 60px;
+  font-size: var(--font-size-2xl); /* 22px */
+  margin-top: 30px;
+  cursor: pointer;
+}
+
+.rightSection {
+  width: 30%;
+  height: 100%;
+  background: #08306b;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+  border-radius: 10px;
+}
+
+.heroImage {
+  height: 80%;
+  object-fit: contain;
+  z-index: 10;
+  position: relative;
+  left: 10%;
+} 

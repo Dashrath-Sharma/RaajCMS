@@ -14,7 +14,7 @@
 .workplaceImage {
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 40%;
   object-fit: cover;
   transform: translateY(-50%);
 }

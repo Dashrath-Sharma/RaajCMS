@@ -34,6 +34,10 @@ const ListIcon = () => {
                 </p>
 
                 <div className={style.content}>
+                    <div className={style.styledContainer}>
+                    <h2 className={`${style.title} ${style.listTitle}`}>
+                    How We Work for You
+                </h2>
                     <ul className={style.points}>
                         {points.map((point, idx) => (
                             <li key={idx} className={style.border}>
@@ -42,12 +46,17 @@ const ListIcon = () => {
                             </li>
                         ))}
                     </ul>
+                    </div>
                     <div className={style.imageWrapper}>
                         <img src={bannerImage} alt="Team working" className={style.image} />
                     </div>
                 </div>
 
-                <div className={style.content}>
+                <div className={`${style.content} ${style.contentReverse}`}>
+                    <div className={style.styledContainer}>
+                    <h2 className={`${style.title} ${style.listTitle}`}>
+                    What You Get in Return
+                </h2>
                     <ul className={style.points}>
                         {points.map((point, idx) => (
                             <li key={idx} className={style.border}>
@@ -56,6 +65,7 @@ const ListIcon = () => {
                             </li>
                         ))}
                     </ul>
+                    </div>
                     <div className={style.imageWrapper}>
                         <img src={bannerImage} alt="Team working" className={style.image} />
                     </div>

@@ -43,6 +43,7 @@
 .navItem {
   color: #08306b;
   text-decoration: none;
+  font-size: var(--font-size-base); /* 16px */
   font-weight: 500;
   padding: 0.5rem 1rem;
   position: relative;
@@ -118,6 +119,7 @@ a.navItem:hover::after {
   padding: 0.75rem 1.5rem;
   border: none;
   border-radius: 42px;
+  font-size: var(--font-size-sm); /* 14px */
   font-weight: 500;
   cursor: pointer;
   transition: all 0.3s ease;
@@ -157,5 +159,39 @@ a.navItem:hover::after {
 :global(button):hover, button:hover {
   filter: brightness(0.95);
   box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  
+}
+
+.navContainer {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+  }
+
+@media (min-width: 1024px) {
+  .navContainer {
+    gap: 2rem;
+  }
+} 
+@media (min-width: 1024px) {
+  .navContainer {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  .navContainer {
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 1680px) {
+  .navContainer {
+    gap: 3rem;
+  }
+}
+
+@media (min-width: 1920px) {
+  .navContainer {
+    gap: 4.5rem;
+  }
 }

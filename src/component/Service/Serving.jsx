@@ -14,8 +14,8 @@ const Serving = () => {
 
             </div>
             <div className={style.ServingCardContainer}>
-                <div className={style.ServingCard}>
-                    <div className={style.ServingCardImage}>
+                {/* <div className={style.ServingCard}> */}
+                    <div className={style.ServingCard}>
                         <img src={image} alt="profile image" className={style.ServingCardImage1} />
                         <div className={style.ServingCardStarContainer}>
                             <img src={star} alt="star" />
@@ -27,7 +27,7 @@ const Serving = () => {
                         <p className={style.name}>-Oscar Flink</p>
                     </div>
 
-                </div>
+                {/* </div> */}
                 <div className={style.ServingCardContent}>
                     <p>Kevin is a successful entrepreneur who has built a successful business. He is a mentor to many entrepreneurs and has a wealth of experience in the business world.</p>
                 </div>
