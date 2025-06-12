@@ -21,7 +21,7 @@
 
 .payrollButton {
   font-family: "Ubuntu";
-  font-size: 12px; /* 12px */
+  font-size: 0.75rem; /* 12px */
   font-weight: 700;
   color: #08306b;
   line-height: 30px;

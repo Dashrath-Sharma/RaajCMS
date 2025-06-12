@@ -74,7 +74,7 @@
   margin-bottom: 12px;
   color: #08306b;
   font-family: "Inter", sans-serif;
-  font-size: 15px;
+  font-size: 1.75rem;
   line-height: 22px;
 }
 
@@ -127,7 +127,7 @@
 .sideListContent li {
   display: flex;
     align-items: center;
-    font-size: 15px;
+    font-size: 1rem;
     color: #fff;
     line-height: 1.5;
     padding-bottom: .5rem;

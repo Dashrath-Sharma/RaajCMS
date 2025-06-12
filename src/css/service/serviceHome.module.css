@@ -20,7 +20,7 @@
 }
 
 .taxButton {
-  font-size: 12px; /* 20px */
+  font-size: 0.75rem; /* 12px */
   font-weight: 500;
   color: #08306B;
   line-height: 30px;

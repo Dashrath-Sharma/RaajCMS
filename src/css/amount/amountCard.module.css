@@ -27,7 +27,7 @@
 .cardTitle {
   font-family: "Inter", sans-serif;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem;
   line-height: 25px;
   color: #08306b;
   margin-bottom: 10px;
@@ -36,7 +36,7 @@
 .cardDescription {
   font-family: "Inter", sans-serif;
   font-weight: 400;
-  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 20px;
   color: #08306b;
   width: 50%;
