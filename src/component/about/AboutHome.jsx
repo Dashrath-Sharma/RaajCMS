@@ -30,8 +30,8 @@ const PayoutHome = () => {
 
         <div className={styles.rightSection}>
           <div className={styles.imageWrapper}>
-            <div className={styles.borderTopLeft} />
-            <div className={styles.borderBottomRight} />
+            {/* <div className={styles.borderTopLeft} />
+            <div className={styles.borderBottomRight} /> */}
             <img src={heroImage} alt="hero" className={styles.heroImage} />
           </div>
         </div>
