@@ -18,7 +18,7 @@ const CareerHome = () => {
                 alignItems: 'center',
                 padding: ' 100px 50px 50px 50px',
             }}>
-                <div style={{ width: '100%' }}>
+                <div style={{ width: '85%' }}>
                     {/* Career Button */}
                     <button style={{
                         fontFamily: 'Ubuntu',

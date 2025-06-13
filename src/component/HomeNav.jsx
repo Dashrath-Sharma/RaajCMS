@@ -28,7 +28,7 @@ const HomeNav = () => {
                     <Link to="/">
                         <img className={style.logo} src={logo} alt="logo" />
                     </Link>
-
+                    <div className={`${style.navContainer} ${style.justifyCenter}`}>
                     {/* SERVICES */}
                     <div className={style.navDropdown}>
                         <span className={style.navItem}>
@@ -64,6 +64,7 @@ const HomeNav = () => {
 
                     <Link to="/contact" className={style.navItem}>CONTACT US</Link>
                     <Link to="/about" className={style.navItem}>ABOUT US</Link>
+                    </div>
 
                 </div>
                 <div className={style.navButtons}>

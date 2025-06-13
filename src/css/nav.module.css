@@ -110,6 +110,8 @@ a.navItem:hover::after {
   display: flex;
   gap: 1rem;
   align-items: center;
+  width: calc(30% - 12px);
+    justify-content: end;
 }
 
 .navButton {
@@ -166,34 +168,10 @@ button:hover {
 .navContainer {
   display: flex;
   align-items: center;
+  flex: 1;
+}
+
+.justifyCenter {
   gap: 2rem;
-}
-
-@media (min-width: 1024px) {
-  .navContainer {
-    gap: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .navContainer {
-    gap: 2rem;
-  }
-}
-
-@media (min-width: 1280px) {
-  .navContainer {
-    gap: 2rem;
-  }
-}
-
-@media (min-width: 1680px) {
-  .navContainer {
-    gap: 3rem;
-  }
-}
-
-@media (min-width: 1920px) {
-  .navContainer {
-    gap: 4.5rem;
-  }
+  justify-content: center;
 }

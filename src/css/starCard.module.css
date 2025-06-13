@@ -70,6 +70,10 @@
   height: auto;
 }
 
+.inverted {
+  filter: invert(1);
+}
+
 /* Experience Image */
 .experience {
   width: 100px;

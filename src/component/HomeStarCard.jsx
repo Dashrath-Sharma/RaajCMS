@@ -5,8 +5,6 @@ import link from '@assets/link.png';
 
 import style from '@css/starCard.module.css';
 
-// ✅ Card component
-// ✅ Card component with hover flip
 const Card = ({ midImage, title,content }) => {
     return (
         <div className={style.cardWrapper}>
@@ -18,6 +16,7 @@ const Card = ({ midImage, title,content }) => {
                         <p className={style.title}>{title}</p>
                     </div>
                     <div className={`${style.card} ${style.cardBack}`}>
+                        <img className={`${style.star} ${style.inverted}`} src={star} alt="star" />
                         <p className={style.backText}>{content}</p>
                     </div>
                 </div>
