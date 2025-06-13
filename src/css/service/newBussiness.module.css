@@ -71,7 +71,7 @@
 .NewBussinessContentCard {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   background-color: #f7fbff;
   padding: 0 40px;
   border-radius: 30px;
@@ -93,7 +93,6 @@
   font-size: var(--font-size-3xl); /* 30px */
   font-weight: 500;
   color: #08306b;
-  text-align: center;
   line-height: 40px;
   letter-spacing: -0.09%;
 }
@@ -105,13 +104,13 @@
 }
 
 .title {
-    font-size: 3.125rem; /* 50px */
+  font-size: 3.125rem; /* 50px */
 }
 .subtitle {
-    font-size: 1.875rem; /* 30px */
+  font-size: 1.875rem; /* 30px */
 }
 .text {
-    font-size: 1rem; /* 16px */
+  font-size: 1rem; /* 16px */
 }
 
 .NewBussinessContentCard h2 {
@@ -129,7 +128,7 @@
 
 @media (min-width: 1680px) {
   .NewBussinessContent {
-   min-height: 550px;
+    min-height: 550px;
   }
   .NewBussinessImageContainer {
     left: 200px;

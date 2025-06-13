@@ -1,43 +1,42 @@
-@import url("https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap");
 /* App.css or global.css */
-@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Palanquin+Dark:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Island+Moments&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import 'tailwindcss';
+@config "../tailwind.config.js";
+@tailwind utilities;
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-* {
-  font-family: "Palanquin Dark", sans-serif;
+@layer base {
+  * {
+    font-family: 'Palanquin Dark', sans-serif;
+  }
 }
 /* global CSS file like index.css or App.css */
+@layer base {
+  :root {
+    /* Font families */
+    --font-palanquin-dark: 'Palanquin Dark', sans-serif;
+    --font-ubuntu: 'Ubuntu', sans-serif;
+    --font-inter: 'Inter', sans-serif;
+    --font-island-moments: 'Island Moments', cursive;
 
-:root {
-  /* Font families */
-  --font-palanquin-dark: "Palanquin Dark", sans-serif;
-  --font-ubuntu: "Ubuntu", sans-serif;
-  --font-inter: "Inter", sans-serif;
-  --font-island-moments: "Island Moments", cursive;
-  
-  /* Colors */
-  --color-dark-green: #026331;
-  --main-color: #08306b;
-  --secondary-color: #08519C;
+    /* Colors */
+    --color-dark-green: #026331;
+    --main-color: #08306b;
+    --secondary-color: #08519c;
 
-  /* Font sizes */
-  --font-size-xs: 0.625rem;    /* 10px */
-  --font-size-sm: 0.875rem;    /* 14px */
-  --font-size-base: 1rem;      /* 16px */
-  --font-size-lg: 1.125rem;    /* 18px */
-  --font-size-xl: 1.25rem;     /* 20px */
-  --font-size-2xl: 1.5rem;     /* 24px */
-  --font-size-3xl: 1.875rem;   /* 30px */
-  --font-size-4xl: 2rem;       /* 32px */
-  --font-size-5xl: 2.5rem;     /* 40px */
-  --font-size-6xl: 2.8125rem;  /* 45px */
-  --font-size-7xl: 3.125rem;   /* 50px */
+    --font-size-xs: 0.625rem; /* 10px */
+    --font-size-sm: 0.875rem; /* 14px */
+    --font-size-base: 1rem; /* 16px */
+    --font-size-lg: 1.125rem; /* 18px */
+    --font-size-xl: 1.25rem; /* 20px */
+    --font-size-2xl: 1.5rem; /* 24px */
+    --font-size-3xl: 1.875rem; /* 30px */
+    --font-size-4xl: 2rem; /* 32px */
+    --font-size-5xl: 2.5rem; /* 40px */
+    --font-size-6xl: 2.8125rem; /* 45px */
+    --font-size-7xl: 3.125rem; /* 50px */
+  }
 }
