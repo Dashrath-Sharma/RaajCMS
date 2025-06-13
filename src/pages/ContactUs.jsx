@@ -11,8 +11,8 @@ const ContactUs = () => {
             </div>
             <div className={style.ContactUsFormContainer}>
                 <div className={style.ContactUsFormPara}>
-                    <h2 className={style.head}>Don’t Hesitate to Reach Out</h2>
-                    <p className={style.para}>
+                    <h2 className={`${style.head} ${style.common}`}>Don’t Hesitate to Reach Out</h2>
+                    <p className={`${style.para} ${style.common}`}>
                         Need directions, have a question, or just want to say hello?
                     </p>
                     <p className={style.para}> Reach out to us today; we’re here to assist</p>
@@ -32,7 +32,7 @@ const ContactUs = () => {
                             <label htmlFor="phone">phone<span style={{color: "red"}}>*</span></label>
                             <input type="text" pattern='[0-9]{10}' id="phone" name="phone" required className={style.Input} />
                         </div>
-                        <div className={style.ContactUsFormInput}>
+                        <div className={`${style.ContactUsFormInput}`}>
                             <label>Business Type<span style={{color: "red"}}>*</span></label>
                             <div className={style.radioGroup}>
                                 <div>
