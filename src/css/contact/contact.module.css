@@ -26,17 +26,18 @@
   width: 50%;
 }
 
-.head {
+.common {
   font-family: var(--font-ubuntu);
-  font-size: var(--font-size-3xl); /* 30px */
   color: #fff;
   margin-bottom: 20px;
+  font-weight: bold;
+}
+
+.head {
+  font-size: var(--font-size-3xl); /* 30px */
 }
 .para {
-  font-family: var(--font-ubuntu);
   font-size: var(--font-size-xl); /* 20px */
-  color: #fff;
-  margin-bottom: 20px;
 }
 .formHead {
   font-family: var(--font-ubuntu);
@@ -57,9 +58,11 @@
   display: flex;
   flex-direction: column;
   color: white;
+  gap: 1rem;
 }
 .Input {
   padding: 10px 40px;
+  background-color: #D9D9D9;
 }
 .ContactUsFormButton {
   color: white;
