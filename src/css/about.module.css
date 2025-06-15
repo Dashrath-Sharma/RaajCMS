@@ -25,7 +25,7 @@
 }
 
 .aboutContentTitle {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: var(--font-size-5xl); /* 40px */
   line-height: 50px;
@@ -35,7 +35,7 @@
 }
 
 .aboutContentDescription {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: var(--font-size-base); /* 16px */
   line-height: 24px;
@@ -89,15 +89,12 @@
   object-fit: contain;
 }
 
-:global(button), button {
+:global(button),
+button {
   cursor: pointer;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    box-shadow 0.3s,
+    transform 0.2s;
 }
-
-:global(button):hover, button:hover {
-  filter: brightness(0.95);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  
-}
-
-

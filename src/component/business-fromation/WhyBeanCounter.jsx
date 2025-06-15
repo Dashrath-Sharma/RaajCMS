@@ -21,18 +21,18 @@ const cardData = [
 ];
 const WhyBeanCounter = () => {
   return (
-    <section className='bg-[#eaf2fb] py-16 text-center'>
-      <h2 className='text-6xl md:text-4xl font-bold text-main mb-12 font-ubuntu'>
+    <section className="bg-[#eaf2fb] py-16 text-center">
+      <h2 className="text-6xl md:text-4xl font-bold text-main mb-12 font-ubuntu">
         Why Bean Counter for your small Business?
       </h2>
 
-      <div className='max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4'>
-        {cardData.map((data) => (
+      <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 px-4">
+        {cardData.map(data => (
           <Card {...data} key={data.description} />
         ))}
       </div>
 
-      <button className='mt-12 bg-[#026331] text-white px-10 py-3 rounded-full font-semibold text-lg hover:bg-[#014f27] transition'>
+      <button className="mt-12 bg-[#026331] text-white px-10 py-3 rounded-full font-semibold text-lg hover:bg-[#014f27] transition">
         Get Started
       </button>
     </section>
@@ -41,7 +41,7 @@ const WhyBeanCounter = () => {
 
 export default WhyBeanCounter;
 
-const Card = ({title, img, description}) => {
+const Card = ({ title, img, description }) => {
   const renderTitle = () => {
     if (title.includes('||')) {
       const parts = title.split('||');
@@ -56,12 +56,10 @@ const Card = ({title, img, description}) => {
     return title;
   };
   return (
-    <div className='bg-white rounded-[30px] px-8 py-10 shadow-md'>
-      <img className='text-green-800 w-20 h-20 mx-auto mb-8' src={img} />
-      <h3 className='text-4xl text-main mb-8 font-ubuntu font-bold'>
-        {renderTitle()}
-      </h3>
-      <p className='text-main text-xl font-thin font-inter'>{description}</p>
+    <div className="bg-white rounded-[30px] px-8 py-10 shadow-md">
+      <img className="text-green-800 w-20 h-20 mx-auto mb-8" src={img} />
+      <h3 className="text-4xl text-main mb-8 font-ubuntu font-bold">{renderTitle()}</h3>
+      <p className="text-main text-xl font-thin font-inter">{description}</p>
     </div>
   );
 };

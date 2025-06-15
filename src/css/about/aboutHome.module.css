@@ -22,7 +22,7 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-family: "Palanquin", sans-serif;
+  font-family: 'Palanquin', sans-serif;
   font-weight: 500;
   font-size: 17px;
   line-height: 30px;
@@ -79,31 +79,7 @@
   position: absolute;
   left: -30%;
   width: 30vw;
-  height:  30vw;
-}
-
-.borderTopLeft {
-position: absolute;
-    top: -25px;
-    left: -40px;
-    width: 8vw;
-    height: 20vw;
-    border-top: 2px solid #08519C;
-    border-left: 2px solid #08519C;
-    border-top-left-radius:  5vw;
-    z-index: 2;
-}
-
-.borderBottomRight {
-position: absolute;
-    bottom: -25px;
-    right: -40px;
-    width: 8vw;
-    height: 20vw;
-    border-bottom: 1px solid white;
-    border-right: 1px solid white;
-    border-bottom-right-radius: 5vw;
-    z-index: 2;
+  height: 30vw;
 }
 
 .heroImage {
@@ -112,4 +88,39 @@ position: absolute;
   object-fit: contain;
   z-index: 1;
   position: absolute;
+}
+
+/* FOR MOBILE HERO SECTION */
+@media (max-width: 1023px) {
+  .container {
+    height: max-content;
+    padding: 10rem 0;
+  }
+  .rightSection {
+    display: none;
+  }
+  .leftSection {
+    width: 90%;
+    margin: auto;
+    padding-top: 0;
+  }
+  .leftSection > div {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heading {
+    text-align: center;
+    font-size: var(--font-size-8xl);
+    line-height: 1.5;
+  }
+  .description {
+    width: 100%;
+    text-align: center;
+    font-size: var(--font-size-5xl);
+  }
+  .ctaButton, .aboutTag {
+    font-size: var(--font-size-3xl);
+  }
 }

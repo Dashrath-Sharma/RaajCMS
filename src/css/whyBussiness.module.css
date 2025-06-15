@@ -5,7 +5,7 @@
 }
 
 .WhyBussinessTitle {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: var(--font-size-5xl); /* 40px */
   line-height: 50px;
@@ -76,7 +76,7 @@
   flex-direction: column;
 }
 .WhyBussinessCardImageText p {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 500;
   font-size: var(--font-size-base); /* 16px */
   line-height: 100%;
@@ -85,7 +85,7 @@
   color: #282828;
 }
 .WhyBussinessCardImageText span {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 400;
   font-size: var(--font-size-sm); /* 14px */
   line-height: 100%;
@@ -98,7 +98,7 @@
 }
 .WhyBussinessCardImageDis {
   color: #08306b;
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 400;
   font-size: var(--font-size-sm); /* 14px */
   line-height: 22px;
@@ -113,7 +113,7 @@
   gap: 10px;
 }
 .name {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 700;
   font-size: var(--font-size-base); /* 16px */
   line-height: 100%;

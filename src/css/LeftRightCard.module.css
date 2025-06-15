@@ -42,7 +42,7 @@
 }
 
 .LeftRightHead {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: var(--font-size-6xl); /* 44px */
   line-height: 100%;
@@ -52,7 +52,7 @@
 }
 
 .LeftRightTitle {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: var(--font-size-xl); /* 20px */
   line-height: 30px;

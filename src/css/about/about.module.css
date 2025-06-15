@@ -52,7 +52,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  transition: all 0.4s cubic-bezier(0.4,0,0.2,1);
+  transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform, box-shadow, background;
 }
 .OurValueCard:hover {
@@ -98,10 +98,10 @@
   color: #fff;
   line-height: 20px;
 }
-.seperator{
+.seperator {
   margin-left: 35px;
   width: calc(100% - 30px);
-  height: .5px;
+  height: 0.5px;
   background: #fff;
   margin-top: 15px;
 }
@@ -126,7 +126,6 @@
     height: 600px;
   }
   .aboutImage {
-  transform: translateX(-165px);
+    transform: translateX(-165px);
+  }
 }
-}
-/* #08519C */

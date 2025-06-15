@@ -4,7 +4,7 @@
 }
 
 .MapContainerP {
-  font-family: "Palanquin Dark", sans-serif;
+  font-family: 'Palanquin Dark', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 31px;
@@ -42,24 +42,26 @@
   gap: 30px;
   padding-top: 50px;
 }
-.MapDiv{
-  width: 100%
+.MapDiv {
+  width: 100%;
 }
-.MapImg{
+.MapImg {
   width: 100%;
   object-fit: contain;
   border-radius: 20px;
   margin-bottom: 10px;
 }
-.MapTextH3,.MapTextP,.MapTextA{
+.MapTextH3,
+.MapTextP,
+.MapTextA {
   font-family: var(--font-inter);
-color: var(--main-color);
-margin-bottom: .5rem;
+  color: var(--main-color);
+  margin-bottom: 0.5rem;
 }
-.MapTextP{
-margin-bottom: 1rem;
+.MapTextP {
+  margin-bottom: 1rem;
 }
 
-.MapTextA{
-text-decoration: none;
+.MapTextA {
+  text-decoration: none;
 }

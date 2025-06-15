@@ -23,70 +23,73 @@
 }
 
 .arrowContainer {
-    display: flex;
-    gap: 1rem;
-    justify-content: center;
-    margin-bottom: 1rem;
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin-bottom: 1rem;
 }
 
 .circleIcon {
-    width: 48px;
-    height: 48px;
-    cursor: pointer;
-    padding: 12px;
-    background-color: #fff;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  padding: 12px;
+  background-color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
 .circleIcon:hover {
-    background-color: var(--main-color);
-    transform: scale(1.05);
+  background-color: var(--main-color);
+  transform: scale(1.05);
 }
 
 .circleIcon:hover .icon {
-    stroke: #fff;
+  stroke: #fff;
 }
 
 .circleIcon.active {
-    background-color: var(--main-color);
-    transform: scale(0.95);
+  background-color: var(--main-color);
+  transform: scale(0.95);
 }
 
 .circleIcon.active .icon {
-    stroke: #fff;
+  stroke: #fff;
 }
 
 .icon {
-    width: 24px;
-    height: 24px;
-    stroke: var(--main-color);
-    transition: all 0.3s ease;
+  width: 24px;
+  height: 24px;
+  stroke: var(--main-color);
+  transition: all 0.3s ease;
 }
 
 .rightArrow:hover {
-    transform: scale(1.05);
+  transform: scale(1.05);
 }
 
 .rightArrow.active {
-    transform: scale(0.95);
+  transform: scale(0.95);
 }
 
-.arrowBtn:hover img, .arrowBtn1:hover img {
+.arrowBtn:hover img,
+.arrowBtn1:hover img {
   filter: brightness(0) invert(1);
 }
 
-.arrowBtn:disabled, .arrowBtn1:disabled {
+.arrowBtn:disabled,
+.arrowBtn1:disabled {
   /* background-color: #e9f2fc; */
   cursor: not-allowed;
   opacity: 0.7;
 }
 
-.arrowBtn img, .arrowBtn1 img {
+.arrowBtn img,
+.arrowBtn1 img {
   width: 100%;
   height: 100%;
   object-fit: contain;
