@@ -10,7 +10,7 @@
 }
 
 .stayUsTitle {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 4rem;
   line-height: 63px;
@@ -19,7 +19,7 @@
   color: #08306b;
 }
 .stayUsText {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 1.25rem;
   line-height: 20px;
@@ -35,7 +35,7 @@
   border-radius: 50px;
   border: none;
   cursor: pointer;
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -65,7 +65,7 @@
   object-fit: cover;
 }
 .cardTitle {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 20px;
   line-height: 20px;
@@ -73,13 +73,12 @@
   color: #08306b;
 }
 
-:global(button), button {
+:global(button),
+button {
   cursor: pointer;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
-}
-
-:global(button):hover, button:hover {
-  filter: brightness(0.95);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  
+  transition:
+    background 0.3s,
+    color 0.3s,
+    box-shadow 0.3s,
+    transform 0.2s;
 }

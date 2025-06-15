@@ -31,7 +31,7 @@
 
 .heading {
   font-family: 'Ubuntu', sans-serif;
-  font-size: var(--font-size-5xl);
+  font-size: 40px;
   font-weight: 700;
   color: #08306b;
   line-height: 50px;
@@ -40,7 +40,7 @@
 
 .description {
   font-family: 'Inter', sans-serif;
-  font-size: var(--font-size-xl);
+  font-size: 20px;
   font-weight: 400;
   color: #08519c;
   margin-top: 20px;
@@ -54,8 +54,8 @@
   display: flex;
   align-items: left;
   padding: 15px 25px;
-  font-weight: 400;
-  font-size: var(--font-size-3xl); /* 14px */
+  font-weight: 600;
+  font-size: var(--font-size-sm); /* 14px */
   line-height: 100%;
   letter-spacing: 0%;
   color: #fff;
@@ -90,11 +90,11 @@
   position: absolute;
 }
 
-
+/* FOR MOBILE HERO SECTION */
 @media (max-width: 1023px) {
   .container {
     height: max-content;
-    padding: 15rem 0;
+    padding: 10rem 0;
   }
   .rightSection {
     display: none;
@@ -102,23 +102,27 @@
   .leftSection {
     width: 90%;
     margin: auto;
-    padding: 1rem;
+    padding: 0;
   }
   .leftSection > div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
-  }
-
-  .ctaButton {
-    margin-top: 50px;
-    font-size: var(--font-size-3xl);
   }
   .heading {
+    text-align: center;
     font-size: var(--font-size-8xl);
+    line-height: 1.5;
   }
   .description {
+    text-align: center;
     font-size: var(--font-size-5xl);
+  }
+  .aboutTag, .ctaButton {
+    font-size: var(--font-size-3xl);
+  }
+  .ctaButton {
+    margin-top: 5rem;
   }
 }

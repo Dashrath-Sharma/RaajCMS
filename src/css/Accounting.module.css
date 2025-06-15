@@ -22,14 +22,14 @@
   border-radius: 5px;
   border: none;
   cursor: pointer;
-  font-family: "Palanquin", sans-serif;
+  font-family: 'Palanquin', sans-serif;
   font-weight: 500;
   font-size: var(--font-size-lg);
   line-height: 30px;
   letter-spacing: 0%;
 }
 .AccountingTitle {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: var(--font-size-5xl);
   line-height: 70px;
@@ -39,7 +39,7 @@
 }
 
 .AccountingParagraph {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: var(--font-size-lg);
   line-height: 30px;
@@ -105,7 +105,7 @@
 }
 
 .CardTitle {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 900;
   font-size: var(--font-size-2xl);
   line-height: 40px;
@@ -142,7 +142,7 @@
 }
 
 .CardDescription {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: var(--font-size-lg);
   line-height: 30px;
@@ -152,13 +152,13 @@
   margin: 0;
 }
 
-:global(button), button {
+:global(button),
+button {
   cursor: pointer;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+  transition:
+    background 0.3s,
+    color 0.3s,
+    box-shadow 0.3s,
+    transform 0.2s;
 }
 
-:global(button):hover, button:hover {
-  filter: brightness(0.95);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  
-}

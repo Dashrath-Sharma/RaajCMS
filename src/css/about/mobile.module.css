@@ -32,18 +32,18 @@
 }
 
 .screen {
-    position: absolute;
-    top: 55%;
-    right: 0;
-    z-index: 2;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    background-color: transparent;
-    box-sizing: border-box;
-    overflow: hidden;
-    transform: translateY(-50%);
-    margin-top: 20px;
+  position: absolute;
+  top: 55%;
+  right: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background-color: transparent;
+  box-sizing: border-box;
+  overflow: hidden;
+  transform: translateY(-50%);
+  margin-top: 20px;
 }
 
 .header {
@@ -77,16 +77,16 @@
 }
 
 .serviceItem {
-    background-color: #a7e3d1;
-    padding: 20px 30px;
-    border-radius: 10px;
-    font-family: sans-serif;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    font-weight: 600;
-    width: 28vw;
-    font-size: 20px;
+  background-color: #a7e3d1;
+  padding: 20px 30px;
+  border-radius: 10px;
+  font-family: sans-serif;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+  width: 28vw;
+  font-size: 20px;
 }
 
 .dot {

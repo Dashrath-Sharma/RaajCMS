@@ -1,61 +1,122 @@
 :root {
   /* Font Sizes */
-  --font-size-xs: 0.75rem;    /* 12px */
-  --font-size-sm: 0.875rem;   /* 14px */
-  --font-size-base: 1rem;     /* 16px */
-  --font-size-lg: 1.125rem;   /* 18px */
-  --font-size-xl: 1.25rem;    /* 20px */  /* BUTTON TEXT MD AND ABOVE*/
-  --font-size-2xl: 1.5rem;    /* 24px */ /* P TAGS ( SECTION PARAGRAPH ) */
-  --font-size-3xl: 1.875rem;  /* 30px */
-  --font-size-4xl: 2rem;      /* 32px */
-  --font-size-5xl: 2.5rem;    /* 40px */
-  --font-size-6xl: 3rem;      /* 48px */
-  --font-size-7xl: 3.125rem;  /* 50px */
-  --font-size-8xl: 3.438rem;  /* 55px */ /* SECTION TITLE */
-  --font-size-9xl: 4rem;      /* 64px */
+  --font-size-xs: 0.75rem; /* 12px */
+  --font-size-sm: 0.875rem; /* 14px */
+  --font-size-base: 1rem; /* 16px */
+  --font-size-lg: 1.125rem; /* 18px */
+  --font-size-xl: 1.25rem; /* 20px */ /* BUTTON TEXT MD AND ABOVE */
+  --font-size-2xl: 1.5rem; /* 24px */ /* P TAGS (SECTION PARAGRAPH) */
+  --font-size-3xl: 1.875rem; /* 30px */
+  --font-size-4xl: 2rem; /* 32px */
+  --font-size-5xl: 2.5rem; /* 40px */
+  --font-size-6xl: 3rem; /* 48px */
+  --font-size-7xl: 3.125rem; /* 50px */
+  --font-size-8xl: 3.438rem; /* 55px */ /* SECTION TITLE */
+  --font-size-9xl: 4rem; /* 64px */
+  --font-size-10xl: 4.375rem; /* 70px */
+  --font-size-11xl: 4.6875rem; /* 75px */
+  --font-size-12xl: 5rem; /* 80px */
+  --font-size-13xl: 5.625rem; /* 90px */
+  --font-size-14xl: 6.25rem; /* 100px */
 }
-
-@media (min-width: 1024px) {
-  html {
-  font-size: 10px;
-  }
-}
-
-@media (min-width: 1280px) {
-  html {
-  font-size: 12px;
-  }
-}
-
-@media (min-width: 1366px) {
-  html {
-  font-size: 14px;
-  }
-}
-
-@media (min-width: 1680px) {
-  html {
-  font-size: 16px;
-  }
-}
-
-@media (min-width: 1920px) {
-  html {
-  font-size: 16px;
-  }
-}
-
 
 /* Utility classes for font sizes */
-.text-xs { font-size: var(--font-size-xs); }
-.text-sm { font-size: var(--font-size-sm); }
-.text-base { font-size: var(--font-size-base); }
-.text-lg { font-size: var(--font-size-lg); }
-.text-xl { font-size: var(--font-size-xl); }
-.text-2xl { font-size: var(--font-size-2xl); }
-.text-3xl { font-size: var(--font-size-3xl); }
-.text-4xl { font-size: var(--font-size-4xl); }
-.text-5xl { font-size: var(--font-size-5xl); }
-.text-6xl { font-size: var(--font-size-6xl); }
-.text-7xl { font-size: var(--font-size-7xl); }
-.text-8xl { font-size: var(--font-size-8xl); } 
+.text-xs {
+  font-size: var(--font-size-xs);
+}
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+.text-base {
+  font-size: var(--font-size-base);
+}
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+.text-xl {
+  font-size: var(--font-size-xl);
+}
+.text-2xl {
+  font-size: var(--font-size-2xl);
+}
+.text-3xl {
+  font-size: var(--font-size-3xl);
+}
+.text-4xl {
+  font-size: var(--font-size-4xl);
+}
+.text-5xl {
+  font-size: var(--font-size-5xl);
+}
+.text-6xl {
+  font-size: var(--font-size-6xl);
+}
+.text-7xl {
+  font-size: var(--font-size-7xl);
+}
+.text-8xl {
+  font-size: var(--font-size-8xl);
+}
+
+/* ≥1921px: Very large desktops */
+@media (min-width: 1921px) {
+  html {
+    font-size: 20px !important;
+  }
+}
+
+/* 1680px – 1920px: Large desktops */
+@media (min-width: 1680px) and (max-width: 1920px) {
+  html {
+    font-size: 18px !important;
+  }
+}
+
+/* 1366px – 1679px: Standard desktops/laptops */
+@media (min-width: 1366px) and (max-width: 1679px) {
+  html {
+    font-size: 16px !important;
+  }
+}
+
+/* 1280px – 1365px: Small desktops */
+@media (min-width: 1280px) and (max-width: 1365px) {
+  html {
+    font-size: 14px !important;
+  }
+}
+
+/* 1024px – 1279px: Tablets / small laptops */
+@media (min-width: 1024px) and (max-width: 1279px) {
+  html {
+    font-size: 12px !important;
+  }
+}
+
+/* 768px – 1023px: Large mobile / tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  html {
+    font-size: 11px !important;
+  }
+}
+
+/* 640px – 767px: Medium mobile */
+@media (min-width: 640px) and (max-width: 767px) {
+  html {
+    font-size: 10px !important;
+  }
+}
+
+/* 480px – 639px: Small mobile */
+@media (min-width: 480px) and (max-width: 639px) {
+  html {
+    font-size: 9px !important;
+  }
+}
+
+/* ≤479px: Extra small mobile */
+@media (max-width: 479px) {
+  html {
+    font-size: 8px !important;
+  }
+}

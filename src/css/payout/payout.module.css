@@ -16,20 +16,38 @@
   background-color: var(--main-color);
   padding: 40px;
   border-radius: 30px;
+  max-width: 300px;
 }
 
-.CradHead {
-  font-family: "Ubuntu";
+.CardHead {
+  font-family: 'Ubuntu';
   font-size: var(--font-size-2xl); /* 24px */
   font-weight: 700;
   color: #fff;
   text-align: center;
 }
 
-.CradPara {
-  font-family: "Inter";
+.CardPara {
+  font-family: 'Inter';
   font-size: var(--font-size-base); /* 16px */
   font-weight: 400;
   color: #fff;
   text-align: center;
+}
+
+@media (max-width: 767px) {
+  .payoutCardContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+  .CardContainer {
+    width: 100%;
+  }
+  .CardHead {
+    font-size: var(--font-size-4xl);
+  }
+  .CardPara  {
+    font-size: var(--font-size-2xl);
+  }
 }

@@ -11,7 +11,7 @@
 }
 
 .positionTitle {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: 48px;
   line-height: 70px;
@@ -35,7 +35,7 @@
 }
 
 .positionCardTitle {
-  font-family: "Palanquin Dark", sans-serif;
+  font-family: 'Palanquin Dark', sans-serif;
   font-weight: 500;
   font-size: 30px;
   color: #08306b;
@@ -75,7 +75,7 @@
 .positionButton {
   background-color: #026331;
   color: #ffffff;
-  font-family: "Palanquin Dark", sans-serif;
+  font-family: 'Palanquin Dark', sans-serif;
   font-weight: 600;
   font-size: 16px;
   border-radius: 12px;
@@ -128,7 +128,7 @@
 }
 
 .sub {
-  font-family: "Palanquin Dark", sans-serif;
+  font-family: 'Palanquin Dark', sans-serif;
   font-weight: 500;
   font-size: 20px;
   color: white;

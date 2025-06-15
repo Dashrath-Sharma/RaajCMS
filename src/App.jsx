@@ -1,7 +1,7 @@
 import './css/global.css';
 // import image from './assets/image.png'
 import React from 'react';
-import {Routes, Route} from 'react-router-dom';
+import { Routes, Route } from 'react-router-dom';
 import Layout from './component/Layout';
 import Home from './pages/Home';
 import Carrer from './pages/Carrer';
@@ -13,25 +13,25 @@ import ContactUs from './pages/ContactUs';
 import AmountPayable from './pages/AmountPayable';
 import Administrative from './pages/Administrative';
 import FAQ from '@pages/FAQ';
-import BusinessFromation from '@pages/BusinessFromation';
+import BusinessFormation from '@pages/BusinessFormation';
 
 const App = () => {
   return (
     <Routes>
       <Route element={<Layout />}>
-        <Route path='/' element={<Home />} />
-        <Route path='/carrer' element={<Carrer />} />
-        <Route path='/service' element={<Service />} />
-        <Route path='/business-formation' element={<BusinessFromation />} />
-        <Route path='/payout' element={<Payout />} />
-        <Route path='/about' element={<About />} />
-        <Route path='/resource' element={<Resource />} />
-        <Route path='/contact' element={<ContactUs />} />
-        <Route path='/amount' element={<AmountPayable />} />
-        <Route path='/administrative' element={<Administrative />} />
-        <Route path='/faq' element={<FAQ />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/career" element={<Carrer />} />
+        <Route path="/serviceS" element={<Service />} />
+        <Route path="/business-formation" element={<BusinessFormation />} />
+        <Route path="/payout" element={<Payout />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/resources" element={<Resource />} />
+        <Route path="/contact" element={<ContactUs />} />
+        <Route path="/account-payable" element={<AmountPayable />} />
+        <Route path="/administrative" element={<Administrative />} />
+        <Route path="/faq" element={<FAQ />} />
 
-        <Route path='*' element={<Home />} />
+        <Route path="*" element={<Home />} />
       </Route>
     </Routes>
   );

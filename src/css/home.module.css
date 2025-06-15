@@ -1,53 +1,60 @@
 .homeContainer {
-    width: 100%;
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 0;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
 }
 
 .homeSection {
-    width: 100%;
-    padding: 4rem 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  width: 100%;
+  padding: 4rem 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .homeSection {
-        padding: 2rem 0;
-    }
+  .homeSection {
+    padding: 2rem 0;
+  }
 }
 
 /* Specific section spacing */
-.homeSection:nth-child(1) { /* Banner section */
-    padding-top: 0;
+.homeSection:nth-child(1) {
+  /* Banner section */
+  padding-top: 0;
 }
 
-.homeSection:nth-child(2) { /* Star Card section */
-    background-color: var(--main-color);
+.homeSection:nth-child(2) {
+  /* Star Card section */
+  background-color: var(--main-color);
 }
 
-.homeSection:nth-child(3) { /* About section */
-    background-color: #f7fbff;
+.homeSection:nth-child(3) {
+  /* About section */
+  background-color: #f7fbff;
 }
 
-.homeSection:nth-child(4) { /* Text Card section */
-    background-color: #ffffff;
+.homeSection:nth-child(4) {
+  /* Text Card section */
+  background-color: #ffffff;
 }
 
-.homeSection:nth-child(5) { /* Left Right section */
-    background-color: var(--main-color);
+.homeSection:nth-child(5) {
+  /* Left Right section */
+  background-color: var(--main-color);
 }
 
-.homeSection:nth-child(6) { /* Why Business section */
-    background-color: #f7fbff;
+.homeSection:nth-child(6) {
+  /* Why Business section */
+  background-color: #f7fbff;
 }
 
-.homeSection:nth-child(7) { /* Accounting section */
-    background-color: var(--main-color);
+.homeSection:nth-child(7) {
+  /* Accounting section */
+  background-color: var(--main-color);
 }
 
 .homeBanner {
@@ -124,7 +131,7 @@
   width: 70%;
 }
 .homeBannerContentTitle {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-size: var(--font-size-7xl); /* 50px */
   font-weight: 700;
   color: #08306b;
@@ -133,7 +140,7 @@
 }
 
 .homeBannerContentDescription {
-  font-family: "Inter";
+  font-family: 'Inter';
   font-weight: 500;
   font-size: var(--font-size-base); /* 16px */
   line-height: 24px;
@@ -235,48 +242,73 @@
   animation: slideUpFade 0.5s ease-out;
 }
 
-:global(button), button {
+:global(button),
+button {
   cursor: pointer;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
-}
-
-:global(button):hover, button:hover {
-  filter: brightness(0.95);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition:
+    background 0.3s,
+    color 0.3s,
+    box-shadow 0.3s,
+    transform 0.2s;
 }
 
 .subtitle {
-    font-size: 0.875rem; /* 14px */
+  font-size: 0.875rem; /* 14px */
 }
 
 .text {
-    font-size: 0.875rem; /* 14px */
-}
-
-@media (min-width: 1280px) {
-  .ladyImage {
-  transform: translateY(20px);
-}
-}
-
-
-
-@media (min-width: 1024px) and (min-height: 600px) {
-  .ladyImage {
-  transform: translateY(16px);
-}
-}
-
-
-
-@media (min-width: 1366px) {
-  .ladyImage {
-  transform: translateY(22px);
-}
+  font-size: 0.875rem; /* 14px */
 }
 
 @media (min-width: 1680px) {
   .ladyImage {
-  transform: translateY(27px);
+    transform: translateY(27px);
+  }
 }
+@media (min-width: 1366px) {
+  .ladyImage {
+    transform: translateY(22px);
+  }
+}
+@media (min-width: 1280px) {
+  .ladyImage {
+    transform: translateY(20px);
+  }
+}
+@media (min-width: 1024px) and (min-height: 600px) {
+  .ladyImage {
+    transform: translateY(16px);
+  }
+}
+
+/* FOR MOBILE HERO SECTION */
+@media (max-width: 1023px) {
+  .homeBanner {
+    height: max-content;
+    padding: 10rem 0;
+  }
+  .homeRight {
+    display: none;
+  }
+  .homeLeft {
+    width: 90%;
+    margin: auto;
+    padding-top: 0;
+  }
+  .homeBannerContent {
+    width: 100%;
+    align-items: center;
+  }
+  .homeBannerContentTitle {
+    text-align: center;
+    font-size: var(--font-size-8xl);
+    line-height: 1.5;
+  }
+  .homeBannerContentDescription {
+    text-align: center;
+    font-size: var(--font-size-5xl);
+  }
+  .homeBannerContentButtons > button {
+    font-size: var(--font-size-3xl);
+  }
 }

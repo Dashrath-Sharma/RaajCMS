@@ -14,7 +14,7 @@
   padding: 25px 50px;
 }
 .blue p {
-  font-family: "Inter";
+  font-family: 'Inter';
   color: white;
   font-size: var(--font-size-sm);
   font-weight: 400;
@@ -44,7 +44,7 @@
   margin-bottom: 20px;
 }
 .title {
-  font-family: "Ubuntu";
+  font-family: 'Ubuntu';
   font-weight: 700;
   font-size: var(--font-size-5xl);
   line-height: 100%;
@@ -54,7 +54,7 @@
   color: var(--main-color);
 }
 .description {
-  font-family: "Palanquin Dark";
+  font-family: 'Palanquin Dark';
   font-weight: 400;
   font-size: var(--font-size-base);
   line-height: 29px;
@@ -86,14 +86,14 @@
   object-fit: cover;
 }
 .ResourceCardHead {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: var(--font-size-2xl);
   font-weight: 700;
   color: white;
   margin: 1rem;
 }
 .ResourceCardPara {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: var(--font-size-base);
   color: white;
   line-height: 24px;
@@ -112,14 +112,14 @@
   display: flex;
   gap: 15px;
   align-items: center;
-  flex: 1
+  flex: 1;
 }
 .GreenCard img {
   width: 40px;
   height: 40px;
 }
 .GreenCard h2 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-size: var(--font-size-base);
   color: #fff;
   line-height: 24px;

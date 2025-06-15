@@ -173,9 +173,9 @@
 
 @media (max-width: 1025px) {
   .cardWrapper {
-  width: 250px;
-  height: 250px;
-  perspective: 1000px;
-  cursor: pointer;
-}
+    width: 250px;
+    height: 250px;
+    perspective: 1000px;
+    cursor: pointer;
+  }
 }

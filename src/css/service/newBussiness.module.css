@@ -45,6 +45,7 @@
   align-items: flex-end; /* push image to bottom */
   justify-content: center;
 }
+
 .kevinImage {
   height: 70%; /* 70% of the container height */
   object-fit: contain;
@@ -120,6 +121,25 @@
   color: #fff;
 }
 
+
+/* INVERSION */
+
+.invertedContainer {
+  background: #f7fbff;
+}
+
+.invertedTitle {
+  color: #08306b;
+}
+
+.invertedCard {
+  background: #08306b;
+}
+
+.invertedCartText {
+  color: #f7fbff !important;
+}
+
 @media (min-width: 1280px) {
   .NewBussinessImageContainer {
     left: 100px;
@@ -132,5 +152,36 @@
   }
   .NewBussinessImageContainer {
     left: 200px;
+  }
+}
+
+@media (max-width: 1023px){
+  .NewBussinessContent {
+    flex-direction: column;
+  }
+  .NewBussinessImageContainer {
+    position: relative;
+    max-width: 600px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+
+  }
+  .NewBussinessContentRight {
+    margin-right: 0;
+    margin-left: 0;
+  }
+  .paraText p {
+    font-size: var(--font-size-3xl);
+    line-height: unset;
+  }
+  .paraText span {
+    font-size: var(--font-size-2xl);
+  }
+}
+
+@media (max-width: 450px){
+  .NewBussinessContainer {
+    padding: 50px 24px;
   }
 }

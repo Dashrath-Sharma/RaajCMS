@@ -1,16 +1,16 @@
 import React from 'react';
 import { Outlet } from 'react-router-dom';
-import HomeNav from './HomeNav';
+import NavigationMenu from './Navigation/NavigationMenu';
 
 const Layout = () => {
-    return (
-        <div>
-            <HomeNav />
-            <main>
-                <Outlet />
-            </main>
-        </div>
-    );
+  return (
+    <div>
+      <NavigationMenu />
+      <main>
+        <Outlet />
+      </main>
+    </div>
+  );
 };
 
-export default Layout; 
+export default Layout;

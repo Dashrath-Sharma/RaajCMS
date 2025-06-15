@@ -15,7 +15,7 @@
 
 .NoTaxHeadTitle {
   font-family: var(--font-inter);
-  font-size: var(--font-size-3xl); /* 30px */
+  font-size: var(--font-size-8xl); /* 30px */
   font-weight: 700;
   color: #fff;
   display: flex;
@@ -24,7 +24,7 @@
 }
 .NoTaxHeadDescription {
   font-family: var(--font-palanquin-dark);
-  font-weight: 400;
+  font-weight: 600;
   font-size: var(--font-size-2xl); /* 24px */
   line-height: 39px;
   letter-spacing: 0%;
@@ -88,8 +88,8 @@
 .NoTaxButton {
   background-color: var(--color-dark-green);
   border-radius: 50px;
-  padding: 20px 40px;
-  font-family: "Palanquin Dark";
+  padding: 1rem 40px;
+  font-family: 'Palanquin Dark';
   font-weight: 600;
   font-size: var(--font-size-xl); /* 20px */
   line-height: 30px;
@@ -97,13 +97,86 @@
   border: none;
 }
 
-:global(button), button {
-  cursor: pointer;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
+.sideList {
+  color: white;
+  display: flex;
+  flex-direction: column;
 }
 
-:global(button):hover, button:hover {
-  filter: brightness(0.95);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
-  
+.sideListContent {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px 0;
+  /* max-width: 60%; */
+  margin: auto;
+}
+
+.sideListContent .coreItems {
+  display: flex;
+  align-items: center;
+  font-size: var(--font-size-xl);
+  color: #fff;
+  line-height: 1.5;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.sideListContent .coreItems:nth-child(even) {
+  padding-left: 2rem;
+}
+.sideListContent .coreItems:nth-child(odd) {
+  padding-right: 2rem;
+}
+
+.sideListContent img {
+  width: 18px;
+  height: 18px;
+  margin-right: 10px;
+  margin-top: 4px;
+}
+
+
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 1rem;
+  }
+
+  .points li {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .sideListContent {
+    grid-template-columns: 1fr;
+  }
+  .footer {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 1rem;
+  }
+
+  .footerText,
+  .footerLogo {
+    width: 100%;
+    flex: unset;
+  }
+  .sideListContent .coreItems:nth-child(even) {
+    padding-left: 0;
+  }
+  .sideListContent .coreItems:nth-child(odd) {
+    padding-right: 0;
+  }
+  .NoTaxButton {
+    font-size: var(--font-size-3xl);
+  }
+  .sideListContent .coreItems  {
+    font-size: var(--font-size-3xl);
+  }
+  .NoTaxHeadDescription {
+    font-size: var(--font-size-3xl);
+  }
 }

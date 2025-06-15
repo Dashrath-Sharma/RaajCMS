@@ -22,7 +22,7 @@
 }
 
 .section h3 {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: var(--font-size-2xl); /* 24px */
   text-transform: capitalize;
@@ -56,7 +56,7 @@
 }
 
 .subText {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: var(--font-size-base); /* 16px */
   text-transform: capitalize;
@@ -65,7 +65,7 @@
 }
 
 .text {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: var(--font-size-xs); /* 10px */
   color: var(--main-color);
@@ -124,7 +124,7 @@
   padding: 10px 25px;
   background-color: #026331;
   color: #fff;
-  font-family: "Palanquin Dark", sans-serif;
+  font-family: 'Palanquin Dark', sans-serif;
   font-weight: 400;
   font-size: var(--font-size-xs); /* 10px */
   border: none;
@@ -138,7 +138,7 @@
 }
 
 .imageHead {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
   font-size: var(--font-size-2xl); /* 24px */
   text-transform: capitalize;
@@ -146,7 +146,7 @@
 }
 
 .imagePara {
-  font-family: "Ubuntu", sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-weight: 400;
   font-size: var(--font-size-base); /* 16px */
   color: var(--main-color);
@@ -176,12 +176,12 @@
   }
 }
 
-:global(button), button {
+:global(button),
+button {
   cursor: pointer;
-  transition: background 0.3s, color 0.3s, box-shadow 0.3s, transform 0.2s;
-}
-
-:global(button):hover, button:hover {
-  filter: brightness(0.95);
-  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
+  transition:
+    background 0.3s,
+    color 0.3s,
+    box-shadow 0.3s,
+    transform 0.2s;
 }
